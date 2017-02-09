@@ -1,0 +1,53 @@
+@supports (-webkit-backdrop-filter: none) {
+
+  body {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(244, 244, 244, 0.8) url(https://im01.metheno.net/blog/Scenery_3.jpg) no-repeat fixed bottom;
+  }
+
+  .blog-masthead {
+  	background-color: rgba(60, 60, 60, 0.3);
+    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .blog-title, .blog-description {
+    color: inherit;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a, .blog-nav-item, .blog-post-title {
+  	color: inherit;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: all 0.2s;
+  }
+
+  a:hover, a:active {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+  }
+
+  .blog-main {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .blog-post-meta {
+  	color: rgba(255, 255, 255, 0.9);
+  }
+
+  .blog-footer {
+    color: rgba(255, 255, 255, 0.9);
+  	background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+}

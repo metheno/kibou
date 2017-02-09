@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,600italic,700italic,100,300,400,600,700");
+
+/*
+ * Landing
+ *
+ * Author: metheno
+ * Website: https://blog.metheno.net/
+ * Version: 0.0.1
+ *
+ * Copyright 2017 metheno
+ */
+
+/* Global */
+
+body {
+  color: rgba(80, 80, 80, 1);
+  background: rgba(244, 244, 244, 0.8);
+	font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	color: #333;
+	font-weight: 400;
+	font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+i, em {
+  font-style: italic;
+}
+
+kbd, pre, code {
+  font-size: 14px;
+  font-family: Consolas, Menlo, Monaco, "Courier New", sans-serif;
+  font-weight: 400;
+}
+
+/* Nav */
+
+.blog-masthead {
+  left: 50%;
+  display: block;
+  text-align: center;
+	background-color: rgba(80, 80, 80, 1);
+	box-shadow: inset 0px -10px 10px rgba(50, 50, 50, 0.5);
+}
+
+.blog-nav-item {
+	position: relative;
+	display: inline-block;
+	padding: 17px 20px 15px 20px;
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: 300;
+  transition: all 0.3s;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+}
+
+.blog-nav-item:focus,.blog-nav-item:hover {
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+}
+
+.blog-nav .active {
+	color: rgba(244, 244, 244, 1);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1)
+}
+
+.blog-nav .active:after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	height: 0;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid;
+	border-left: 5px solid transparent;
+	content: " ";
+	vertical-align: middle;
+}
+
+/* Header */
+
+.blog-header {
+  cursor: default;
+	padding-top: 30px;
+	padding-bottom: 30px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.blog-title {
+	margin-top: 30px;
+	margin-bottom: 0;
+	font-weight: 100;
+	font-size: 48px;
+}
+
+.blog-description {
+	color: #999;
+	font-size: 18px;
+}
+
+.blog-main {
+  padding: 40px;
+	font-size: 15px;
+	line-height: 1.5;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.2);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Pager */
+
+.pager {
+	margin-bottom: 60px;
+	text-align: left
+}
+
+.pager>li>a {
+	padding: 10px 20px;
+	width: 140px;
+	border-radius: 30px;
+	text-align: center
+}
+
+/* Posts */
+
+.blog-post {
+	margin-bottom: 10px;
+}
+
+.blog-post-title {
+	margin-bottom: 5px;
+	font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.blog-post-meta {
+	margin-bottom: 20px;
+	color: rgba(80, 80, 80, 0.7);
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Footer */
+
+.blog-footer {
+	padding: 30px 0;
+	background-color: rgba(248, 248, 248, 0.8);
+	color: rgba(80, 80, 80, 0.7);
+	text-align: center;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.3);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blog-footer p {
+	line-height: 1;
+}
+
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+
+/* Archives */
+
+/* Friend Links */
+
+/* Responsive */
+
+@media (min-width:1200px) {
+
+	.container {
+		width: 768px;
+	}
+
+  .blog-footer {
+    position: relative;
+    width: 90%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+}
