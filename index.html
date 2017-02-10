@@ -17,8 +17,10 @@
     <!-- Style for Theme Kibou -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/transparent.css" rel="stylesheet">
     <link href="css/highlight.css" rel="stylesheet">
+
+    <!-- Enable Blur Effect for Safari -->
+    <link href="css/transparent.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -50,71 +52,103 @@
 
         <div class="blog-main">
 
-          <div class="blog-post">
-            <h2 class="blog-post-title">Sample Blog Post 测试页</h2>
-            <p class="blog-post-meta">Feb 9, 2017 by <a href="#">metheno</a></p>
+          <article itemscope="" itemtype="http://schema.org/BlogPosting">
+            <div class="blog-post">
+              <h2 class="blog-post-title">Sample Blog Post 测试页</h2>
+              <p class="blog-post-meta">Feb 9, 2017 by <a href="#">metheno</a></p>
 
-            <p>This is a simple blog post that can show some of the features of this theme.</p>
-            <hr>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>Example code block</code></pre>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <h3>Sub-heading</h3>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
+              <p>This is a simple blog post that can show some of the features of this theme.</p>
+              <hr>
+              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+              <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </blockquote>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <h2>Heading</h2>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <pre><code>sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baselibaselibaselibaselibaseline;
+}</code></pre>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+              <ol>
+                <li>Vestibulum id ligula porta felis euismod semper.</li>
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+              </ol>
+              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            </div>
+            <center class="center-more"><a href="#" class="btn btn-default btn-lg read-more" role="button">阅读更多</a></center>
+          </article><!-- /.blog-post -->
+
+          <article itemscope="" itemtype="http://schema.org/BlogPosting">
+            <div class="blog-post">
+              <h2 class="blog-post-title">不欢迎使用 Typecho</h2>
+              <p class="blog-post-meta">Feb 9, 2017 by <a href="#">metheno</a></p>
+
+              <p>暖国的雨，向来没有变过冰冷的坚硬的灿烂的雪花。博识的人们觉得他单调，他自己也以为不幸否耶？江南的雪，可是滋润美艳之至了；那是还在隐约着的青春的消息，是极壮健的处子的皮肤。</p>
+              <blockquote>
+                <p>是的，那是孤独的雪，是死掉的雨，是雨的精魂。/p>
+              </blockquote>
+              <p>雪野中有血红的宝珠山茶，白中隐青的单瓣梅花，深黄的磬口的蜡梅花；雪下面还有冷绿的杂草。蝴蝶确乎没有；蜜蜂是否来采山茶花和梅花的蜜，我可记不真切了。但我的眼前仿佛看见冬花开在雪野中，有许多蜜蜂们忙碌地飞着，也听得他们嗡嗡地闹着。</p>
+              <p>孩子们呵着冻得通红，象紫芽姜一般的小手，七八个一齐来塑雪罗汉。因为不成功，谁的父亲也来帮忙了。罗汉就塑得比孩子们高得多，虽然不过是上小下大的一堆，终于分不清是壶卢还是罗汉，然而很洁白，很明艳，以自身的滋润相粘结，整个地闪闪地生光。孩子们用龙眼核给他做眼珠，又从谁的母亲的脂粉奁中偷得胭脂来涂在嘴唇上。这回确是一个大阿罗汉了。他也就目光灼灼地嘴唇通红地坐在雪地里。</p>
+              <p>第二天还有几个孩子来访问他；对了他拍手，点头，嘻笑。但他终于独自坐着了。晴天又来消释他的皮肤，寒夜又使他结一层冰，化作不透明的水晶模样，连续的晴天又使他成为不知道算什么，而嘴上的胭脂也褪尽了。</p>
+              <p>但是，朔方的雪花在纷飞之后，却永远如粉，如沙，他们决不粘连，撒在屋上，地上，枯草上，就是这样。屋上的雪是早已就有消化了的，因为屋里居人的火的温热。别的，在晴天之下，旋风忽来，便蓬勃地奋飞，在日光中灿灿地生光，如包藏火焰的大雾，旋转而且升腾，弥漫太空，使太空旋转而且升腾地闪烁。</p>
+              <p>在无边的旷野上，在凛冽的天宇下，闪闪地旋转升腾着的是雨的精魂……</p>
+              <p>是的，那是孤独的雪，是死掉的雨，是雨的精魂。</p>
+            </div>
+            <center class="center-more"><a class="btn btn-default btn-lg read-more" role="button">阅读更多</a></center>
+          </article><!-- /.blog-post -->
+
+          <article itemscope="" itemtype="http://schema.org/BlogPosting">
+            <div class="blog-post">
+              <h2 class="blog-post-title">欢迎使用 Typecho</h2>
+              <p class="blog-post-meta">Feb 9, 2017 by <a href="#">metheno</a></p>
+
+              <p>下面是 Pagination 的设计，使用了 Bootstrap。</p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            </div>
+            <center class="center-more"><a href="#" class="btn btn-default btn-lg read-more" role="button">阅读更多</a></center>
+          </article><!-- /.blog-post -->
+
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="disabled">
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li class="active"><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
             </ul>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
-            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          </div><!-- /.blog-post -->
-
-          <nav>
-            <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </nav>
+          </nav><!-- /.pagination -->
 
         </div><!-- /.blog-main -->
 

@@ -17,8 +17,10 @@
     <!-- Style for Theme Kibou -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/transparent.css" rel="stylesheet">
     <link href="css/highlight.css" rel="stylesheet">
+
+    <!-- Enable Blur Effect for Safari -->
+    <link href="css/transparent.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -42,8 +44,8 @@
     <div class="container">
 
       <div class="blog-header">
-        <h1 class="blog-title">metheno's Blog</h1>
-        <p class="lead blog-description">A simple blog theme based on Bootstrap.</p>
+        <h1 class="blog-title">typecho-theme-Kibou</h1>
+        <p class="lead blog-description">一个简洁风格的 Typecho 主题</p>
       </div>
 
       <div class="row">
@@ -51,26 +53,32 @@
         <div class="blog-main">
 
           <div class="blog-post">
-            <h1 class="blog-post-title">Sample Blog Post 测试页</h1>
+            <h1 class="blog-post-title">Sample 测试页</h1>
             <p class="blog-post-meta">Feb 9, 2017 by <a href="#">metheno</a></p>
 
             <p>This is a simple blog post that can show some of the features of this theme.</p>
+            <p>这是一个用于测试的博客文章，内容来自 Bootstrap<sup>2</sup>。</p>
             <hr>
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
             <blockquote>
               <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </blockquote>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <h2>Heading</h2>
+            <h2>文章内标题</h2>
             <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <h3>Sub-heading</h3>
+            <h3>代码段（未完成）</h3>
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <pre><code>body {
+            <!--pre><code>body {
   color: rgba(80, 80, 80, 1);
   background-color: rgba(244, 244, 244, 0.8);
   font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
-}</code></pre>
+}</code></pre-->
             <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <h3>图片样式（未完成）</h3>
+            <img src="https://im01.metheno.net/blog/Scenery_3.jpg" alt="Simple Image"/>
+            <h3>视频样式（未完成）</h3>
+            <video src="https://oiorpx1m7.qnssl.com/images/post_161223_kimino/12469540-1-hd.mp4" controls poster="https://im01.metheno.net/blog/Scenery_3.jpg">
+            </video>
             <h3>Sub-heading</h3>
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <ul>
@@ -87,17 +95,35 @@
             <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
           </div><!-- /.blog-post -->
 
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="disabled">
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li class="active"><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav><!-- /.pagination -->
+
         </div><!-- /.blog-main -->
 
       </div><!-- /.row -->
 
     </div><!-- /.container -->
 
-    <div class="container-fluid">
-      <footer class="blog-footer">
-        <p>&copy; Copyright 2017 <a href="https://blog.metheno.net">metheno</a>.</p>
-      </footer>
-    <div>
+    <footer class="blog-footer">
+      <p>&copy; Copyright 2017 <a href="https://blog.metheno.net">metheno</a>.</p>
+    </footer>
 
     <!-- Bootstrap Core JavaScripts -->
     <script src="js/jquery.min.js"></script>

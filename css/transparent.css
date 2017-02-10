@@ -32,10 +32,69 @@
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
   }
 
+  .read-more {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .read-more:hover, .read-more:focus {
+    color: inherit;
+    background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .read-more:active, .read-more:hover:active {
+    color: inherit;
+    background: rgba(100, 100, 100, 0.1);
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  article {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .pagination {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    margin: 20px 0 0 0;
+    -webkit-user-select: none;
+  }
+
+  .pagination > li > a, .pagination > li > span {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus,
+  .pagination > li > span:hover {
+      color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0);
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+      border-color: rgba(255, 255, 255, 0);
+  }
+
+  .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover,
+  .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+      background-color: rgba(255, 255, 255, 0);
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  }
+
+  .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover,
+  .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+      cursor: not-allowed;
+      color: rgba(255, 255, 255, 0.4);
+      background-color: rgba(255, 255, 255, 0);
+      text-shadow: none;
+      border-color: #ddd
+  }
+
   .blog-main {
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(100, 100, 100, 0.1);
-    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(10px);
   }
 
@@ -46,8 +105,7 @@
   .blog-footer {
     color: rgba(255, 255, 255, 0.9);
   	background-color: rgba(100, 100, 100, 0.1);
-    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
     -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   }
-
 }
