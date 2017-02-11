@@ -22,11 +22,17 @@
 
   <nav aria-label="Page navigation">
     <ul class="pagination">
-      <li><?php $this->thePrev('%s','<a class="disabled">没有更多了</a>'); ?></li>
-      <li><?php $this->theNext('%s','<a class="disabled">没有更多了</a>'); ?></li>
+      <li><?php $this->thePrev('%s','<span>没有更多了</span>'); ?></li>
+      <li><?php $this->theNext('%s','<span>没有更多了</span>'); ?> </li>
     </ul>
   </nav><!-- /.pagination -->
 
 </div><!-- /.blog-main -->
+
+<style>
+  .pagination {
+    font-size: 13px;
+  }
+</style>
 
 <?php $this->need('footer.php'); ?>
