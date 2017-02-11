@@ -46,10 +46,10 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a <?php if($this->is('index')): ?> class="blog-nav-item active" <?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
+          <a class="blog-nav-item <?php if($this->is('index')): echo "active"; endif; ?>" href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
           <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
-            <?php while($pages->next()): ?>
-              <a<?php if($this->is('page', $pages->slug)): ?> class="blog-nav-item active"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
+          <?php while($pages->next()): ?>
+            <a class="blog-nav-item <?php if($this->is('page', $pages->slug)): echo "active"; endif; ?>"  href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a>
           <?php endwhile; ?>
         </nav>
       </div>
@@ -64,13 +64,13 @@
         <p class="lead blog-description"><?php $this->options->description() ?></p>
       </div>
 
-      <!-- Search -->
-      <div class="site-search col-3 kit-hidden-tb">
+      <!-- Search<div class="site-search col-3 kit-hidden-tb">
         <form id="search" method="post" action="./" role="search">
-          <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
-            <input type="text" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>" />
-            <button type="submit" class="submit"><?php _e('搜索'); ?></button>
+          <label for="s" class="sr-only"><?php // _e('搜索关键字'); ?></label>
+            <input type="text" name="s" class="text" placeholder="<?php // _e( '输入关键字搜索'); ?>" />
+            <button type="submit" class="submit"><?php // _e('搜索'); ?></button>
         </form>
-      </div>
+      </div> -->
+
 
       <div class="row">

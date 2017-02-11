@@ -12,8 +12,23 @@
   }
 
   .blog-title, .blog-description {
-    color: inherit;
+    color: rgba(255, 255, 255, 0.9);
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+
+  .blog-title a, .blog-title a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+
+  h2.blog-post-title a {
+  	color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+  }
+
+  h2.blog-post-title a:hover {
+  	color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
   }
 
   h1, h2, h3, h4, h5, h6, p, a, .blog-nav-item, .blog-post-title {

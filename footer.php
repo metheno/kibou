@@ -1,9 +1,11 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
 </div><!-- /.row -->
 
 </div><!-- /.container -->
 
 <footer class="blog-footer">
-  <p>&copy; Copyright <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.</p>
+  <p>&copy; Copyright <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a></p>
 </footer>
 
 <!-- Bootstrap Core JavaScripts -->

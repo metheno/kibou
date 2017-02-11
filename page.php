@@ -8,24 +8,15 @@
       <h2 class="blog-post-title" itemprop="name headline"><?php $this->title() ?></h2>
       <p class="blog-post-meta">
         <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>&nbsp;•
-        <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('Y-m-d'); ?></time>&nbsp;•
-        <?php $this->category(', '); ?>
+        <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('Y-m-d'); ?></time>
       </p>
 
       <?php $this->content(); ?>
 
-      <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
     </div>
   </article><!-- /.blog-post -->
 
   <?php // $this->need('comments.php'); ?>
-
-  <nav aria-label="Page navigation">
-    <ul class="pagination">
-      <li><?php $this->thePrev('%s','<a class="disabled">没有更多了</a>'); ?></li>
-      <li><?php $this->theNext('%s','<a class="disabled">没有更多了</a>'); ?></li>
-    </ul>
-  </nav><!-- /.pagination -->
 
 </div><!-- /.blog-main -->
 

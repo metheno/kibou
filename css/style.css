@@ -261,6 +261,18 @@ article:last-of-type {
   text-align: center;
 }
 
+h2.blog-post-title a {
+	color: rgba(80, 80, 80, 1);
+  text-decoration: none;
+  transition: all 0.2;
+}
+
+h2.blog-post-title a:hover {
+	color: rgba(60, 60, 60, 1);
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(80, 80, 80, 0.3);
+}
+
 .blog-post-meta {
 	margin-bottom: 20px;
 	color: rgba(80, 80, 80, 0.7);
