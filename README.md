@@ -8,6 +8,8 @@ A simple starter for typecho theme Kibou
 
 - [x] Finish header.php
 - [ ] Finish index.php
+- [ ] Finish archive.php
+- [ ] Finish archives.php
 - [x] Finish post.php
 - [x] Finish page.php
 - [ ] Finish comments.php
