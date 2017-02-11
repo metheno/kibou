@@ -218,6 +218,11 @@ video {
 	font-size: 48px;
 }
 
+.blog-title a, .blog-title a:hover {
+	color: rgba(80, 80, 80, 1);
+  text-decoration: none;
+}
+
 .blog-description {
 	color: #999;
 	font-size: 18px;
@@ -396,4 +401,15 @@ nav {
     border-radius: 0;
   }
 
+}
+
+.browsehappy {
+  padding:8px 0;
+  background:#FBE3E4;
+  color:#8A1F11;
+  text-align:center;
+}
+
+.browsehappy a {
+  color:#8A1F11;
 }
