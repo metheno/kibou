@@ -10,6 +10,10 @@ A simple Typecho theme Kibou based on Bootstrap.
 ![Kibou Post](https://im01.metheno.net/images/170212/kibou_post.png)
 ![Kibou Footer](https://im01.metheno.net/images/170212/kibou_footer.png)
 
+## Demo
+
+(http://test.metheno.net/)
+
 ## todo
 
 ### Must
