@@ -29,11 +29,7 @@ $this->need('header.php'); ?>
     </article><!-- /.blog-post -->
   <?php endwhile; ?>
 
-  <hr/>
-
-  <center>
-    <?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
-  </center>
+  <?php // $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
 
 </div>
 

@@ -18,7 +18,7 @@
     </div>
   </article><!-- /.blog-post -->
 
-  <?php $this->need('comments.php'); ?>
+  <?php // $this->need('comments.php'); ?>
 
   <nav aria-label="Page navigation">
     <ul class="pagination">
