@@ -14,8 +14,8 @@
 
       <?php $this->content(); ?>
 
-      <p itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></p>
     </div>
+    <p itemprop="keywords" class="tags" style="padding-top:10px;"><?php _e('标签: '); ?><?php $this->tags(', ', true, '无'); ?></p>
   </article><!-- /.blog-post -->
 
   <?php $this->need('comments.php'); ?>
