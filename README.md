@@ -1,14 +1,14 @@
 # typecho-theme-kibou
 
-A simple typecho theme Kibou based on Bootstrap.
+A simple starter for typecho theme Kibou
 
 ## todo
 
 ### Must
 
 - [x] Finish header.php
-- [x] Finish index.php
-- [x] Finish archive.php
+- [ ] Finish index.php
+- [ ] Finish archive.php
 - [ ] Finish archives.php
 - [x] Finish post.php
 - [x] Finish page.php
