@@ -1,22 +1,24 @@
 # typecho-theme-kibou
 
-A simple starter for typecho theme Kibou
+A simple Typecho theme Kibou based on Bootstrap.
 
 ## todo
 
 ### Must
 
 - [x] Finish header.php
-- [ ] Finish index.php
-- [ ] Finish archive.php
+- [x] Finish index.php
+- [x] Finish archive.php
 - [ ] Finish archives.php
 - [x] Finish post.php
 - [x] Finish page.php
-- [ ] Finish comments.php
+- [x] Finish comments.php
 - [x] Finish footer.php
 - [x] Finish 404.php
 - [ ] Finish function.php
 
+- [ ] Create Settings Pane in Admin Panel
+
 ### Optional
 
-- [x] Create a transparent style for Safari
+- [ ] Create a transparent style for Safari
