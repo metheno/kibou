@@ -1,7 +1,6 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('header.php'); ?>
-
-<div class="blog-main">
+<?php
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('header.php'); ?>
 
   <article itemscope="" itemtype="http://schema.org/BlogPosting">
     <div class="blog-post">
@@ -26,8 +25,6 @@
       <li><?php $this->theNext('%s','<span>没有更多了</span>'); ?> </li>
     </ul>
   </nav><!-- /.pagination -->
-
-</div><!-- /.blog-main -->
 
 <style>
   .pagination {

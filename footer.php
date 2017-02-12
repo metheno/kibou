@@ -1,4 +1,18 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php
+if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
+            <?php if(!$this->is('post') && !$this->is('page')): ?>
+              <center class="center-more">
+                <form class="form-inline" id="search" method="post" action="./" role="search">
+                  <div class="form-group">
+                    <input type="text" name="s" class="form-control" placeholder="<?php _e( '输入关键字搜索'); ?>">
+                  </div>
+                  <button type="submit" class="btn btn-primary"><?php _e( '搜索'); ?></button>
+                </form>
+              </center><!-- ./search -->
+            <?php endif; ?>
+
+          </div><!-- /.blog-main -->
 
         </div><!-- /.row -->
       </div><!-- /.container -->

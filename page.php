@@ -1,7 +1,6 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('header.php'); ?>
-
-<div class="blog-main">
+<?php
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('header.php'); ?>
 
   <article itemscope="" itemtype="http://schema.org/BlogPosting">
     <div class="blog-post">
@@ -16,8 +15,6 @@
     </div>
   </article><!-- /.blog-post -->
 
-  <?php // $this->need('comments.php'); ?>
-
-</div><!-- /.blog-main -->
+  <?php $this->need('comments.php'); ?>
 
 <?php $this->need('footer.php'); ?>

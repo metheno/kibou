@@ -1,7 +1,8 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php
+if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
 <div id="comments">
   <hr/>
-
   <?php function threadedComments($comments, $options) {
     $commentClass = '';
       if ($comments->authorId) {

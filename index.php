@@ -1,16 +1,14 @@
 <?php
 /**
- * 让我们为梦想而努力吧！
+ * 这位博主，请开始你的写作。
  *
  * @package Kibou
  * @author metheno
- * @version 0.1
+ * @version 0.1.1
  * @link http://www.metheno.net
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php'); ?>
-
-<div class="blog-main">
 
   <?php while($this->next()): ?>
     <article itemscope="" itemtype="http://schema.org/BlogPosting">
@@ -34,7 +32,5 @@ $this->need('header.php'); ?>
   <center>
     <?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
   </center>
-
-</div>
 
 <?php $this->need('footer.php'); ?>

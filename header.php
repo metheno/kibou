@@ -1,4 +1,5 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php
+if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <!DOCTYPE HTML>
 <html class="no-js">
   <head>
@@ -66,28 +67,22 @@
 
       <!-- Header -->
       <div class="blog-header">
-        <h1 class="blog-title"><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></h1>
+        <h1 class="blog-title">
+            <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
+        </h1>
         <p class="lead blog-description">
-          <?php if($this->is('archive')): ?>
-            <?php $this->archiveTitle(array(
+          <?php if($this->is('archive')):
+            $this->archiveTitle(array(
                 'category'  =>  _t('分类 %s 下的文章'),
                 'search'    =>  _t('含 %s 的文章'),
                 'tag'       =>  _t('标签 %s 下的文章'),
                 'author'    =>  _t('%s 发布的文章')
-            ), '', ''); ?>
-          <?php else: ?>
-          <?php $this->options->description() ?>
-        <?php endif; ?>
+            ), '', '');
+            else:
+              $this->options->description();
+          endif; ?>
         </p>
       </div>
 
-      <!-- Search<div class="site-search col-3 kit-hidden-tb">
-        <form id="search" method="post" action="./" role="search">
-          <label for="s" class="sr-only"><?php // _e('搜索关键字'); ?></label>
-            <input type="text" name="s" class="text" placeholder="<?php // _e( '输入关键字搜索'); ?>" />
-            <button type="submit" class="submit"><?php // _e('搜索'); ?></button>
-        </form>
-      </div> -->
-
-
       <div class="row">
+        <div class="blog-main">
