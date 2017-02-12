@@ -4,6 +4,12 @@ A simple Typecho theme Kibou based on Bootstrap.
 
 发现 bug 求发 [Issue](https://github.com/metheno/typecho-theme-kibou/issues)
 
+## Screenshots
+
+![Kibou Header](https://im01.metheno.net/images/170212/kibou_index.png)
+![Kibou Post](https://im01.metheno.net/images/170212/kibou_post.png)
+![Kibou Footer](https://im01.metheno.net/images/170212/kibou_footer.png)
+
 ## todo
 
 ### Must
@@ -18,8 +24,6 @@ A simple Typecho theme Kibou based on Bootstrap.
 - [x] Finish footer.php
 - [x] Finish 404.php
 - [ ] Finish function.php
-
-- [ ] Create Settings Pane in Admin Panel
 
 ### Optional
 
