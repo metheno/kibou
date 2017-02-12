@@ -2,6 +2,8 @@
 
 A simple Typecho theme Kibou based on Bootstrap.
 
+发现 bug 求发 [Issue](https://github.com/metheno/typecho-theme-kibou/issues)
+
 ## todo
 
 ### Must
