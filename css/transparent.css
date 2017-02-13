@@ -11,7 +11,7 @@
 
   body {
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(255, 200, 200, 1) url(https://im01.metheno.net/blog/Scenery_3.jpg) no-repeat fixed bottom;
+    background: url('');
   }
 
   .blog-masthead {
