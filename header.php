@@ -1,5 +1,6 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
 <!DOCTYPE HTML>
 <html class="no-js">
   <head>
@@ -28,8 +29,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
     <!-- 转为 macOS 中 Safari 打造的毛玻璃效果 -->
-    <link href="<?php //$this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
-
+    <link href="<?php // $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
