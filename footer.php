@@ -33,7 +33,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <script type="text/javascript">
       $(document).ready(function(){
         var reply_btn_display = $('#cancel-comment-reply-link').css('display');
-        $("ol:first").removeClass("comment-list").addClass('media-list');
+        $(".comment-list:first").removeClass("comment-list").addClass('media-list');
         if(reply_btn_display == 'none'){
           $("#cancel-reply-btn").css('display', 'none');
         };
