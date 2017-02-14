@@ -32,9 +32,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <?php if ($this->options->enableTransparentBg == 0): ?>
       <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
       <style>
-        body {
-          background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
-          background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
+        @supports (-webkit-backdrop-filter: none) {
+          body {
+            background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
+            background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
+          }
         }
       </style>
     <?php endif; ?>
