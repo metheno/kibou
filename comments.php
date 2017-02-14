@@ -29,7 +29,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     </div>
     <div class="media-body">
       <p class="media-heading"><strong><?php $comments->author(); ?></strong></p>
-      <span href="<?php $comments->permalink(); ?>" class="text-muted"><?php $comments->date('Y-m-d H:i'); ?></span>
+      <span href="<?php $comments->permalink(); ?>" class="text-muted comment-meta"><?php $comments->date('Y-m-d H:i'); ?></span>
       <?php $comments->content(); ?>
       <span class="comment-reply"><?php $comments->reply(); ?></span>
     </div>
@@ -88,7 +88,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         <textarea rows="4" cols="50" name="text" id="textarea" class="form-control" placeholder="请自觉遵守互联网相关的政策法规，不发布色情、暴力、反动的言论。" required ><?php $this->remember('text'); ?></textarea>
       </div>
       <div class="form-group">
-        <center><button type="submit" class="btn btn-default btn-sm comment-submit"><?php _e('提交评论'); ?></button></center>
+        <center><button type="submit" class="btn btn-theme btn-rounded"><?php _e('提交评论'); ?></button></center>
       </div>
 	  </form>
 

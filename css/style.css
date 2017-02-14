@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,600italic,700italic,100,300,400,600,700");
 
-/*
- * Landing
+/**
+ * style.css
  *
- * Author: metheno
- * Website: https://blog.metheno.net/
- * Version: 0.0.1
- *
- * Copyright 2017 metheno
+ * Author     : metheno
+ * Date       : 2017/02/11
+ * Version    :
+ * Description:
  */
 
 /* Global */
@@ -129,13 +128,101 @@ video {
   box-shadow: 0px 2px 5px rgba(80, 80, 80, 0.3);
 }
 
+/* Pagination */
+
+nav {
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.pagination {
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
+}
+
+.pagination > li > a, .pagination > li > span {
+  padding: 10px 13px 8.5px 13px;
+  border: none;
+  transition: all 0.2s;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px
+}
+
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus,
+.pagination > li > span:hover {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+  border-radius: 3px;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover,
+.pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    border-radius: 3px;
+}
+
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover,
+.pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+  color: rgba(80, 80, 80, 0.7);
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd
+}
+
 /* Buttons */
 
 .center-more {
   padding: 10px 0 20px 0;
 }
 
-.read-more {
+.btn-theme {
+  padding: 13px 50px;
+  text-decoration: none;
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-theme:focus, .btn-theme.focus {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-theme:hover {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 0.5);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-theme:active, .btn-theme.active, .open > .dropdown-toggle.btn-theme {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 1);
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-theme:active:hover, .btn-theme.active:hover, .open > .dropdown-toggle.btn-theme:hover,
+.btn-theme:active:focus, .btn-theme.active:focus, .open > .dropdown-toggle.btn-theme:focus,
+.btn-theme:active.focus, .btn-theme.active.focus, .open > .dropdown-toggle.btn-theme.focus {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-theme:active, .btn-theme.active, .open > .dropdown-toggle.btn-theme {
+  background-image: none;
+}
+
+.btn-huge {
   padding: 13px 50px;
   font-size: 15px;
   font-weight: 400;
@@ -147,38 +234,19 @@ video {
   transition: all 0.2s;
 }
 
-.read-more:hover, .read-more:focus {
+.btn-huge:hover, .btn-huge:focus {
   color: inherit;
   background-color: rgba(244, 244, 244, 1);
   box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
 }
 
-.read-more:active {
+.btn-huge:active {
   color: inherit;
   box-shadow: inset 0px 2px 5px rgba(80, 80, 80, 0.2);
 }
 
-.comment-submit {
-  padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 400;
-  border: none;
-  border-radius: 20px;
-  color: inherit;
-  background-color: rgba(244, 244, 244, 0);
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
-  transition: all 0.2s;
-}
-
-.comment-submit:hover, .comment-submit:focus {
-  color: inherit;
-  background-color: rgba(244, 244, 244, 1);
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
-}
-
-.comment-submit:active {
-  color: inherit;
-  box-shadow: inset 0px 2px 5px rgba(80, 80, 80, 0.2);
+.btn-rounded {
+  border-radius: 50px;
 }
 
 /* Nav */
@@ -316,56 +384,6 @@ h2.blog-post-title a:hover {
   text-align: center;
 }
 
-/* Pagination */
-
-nav {
-  padding: 10px 0 0 0;
-  text-align: center;
-}
-
-.pagination {
-  border-radius: 3px;
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
-}
-
-.pagination > li > a, .pagination > li > span {
-  padding: 10px 13px 8.5px 13px;
-  border: none;
-  transition: all 0.2s;
-}
-
-.pagination > li:first-child > a, .pagination > li:first-child > span {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px
-}
-
-.pagination > li:last-child > a, .pagination > li:last-child > span {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px
-}
-
-.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus,
-.pagination > li > span:hover {
-  z-index: 2;
-  color: #23527c;
-  background-color: #eee;
-  border-color: #ddd;
-  border-radius: 3px;
-}
-
-.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover,
-.pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-    border-radius: 3px;
-}
-
-.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover,
-.pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
-  color: rgba(80, 80, 80, 0.7);
-  cursor: not-allowed;
-  background-color: #fff;
-  border-color: #ddd
-}
-
 /* Footer */
 
 .blog-footer {
@@ -406,6 +424,10 @@ nav {
   max-height: 48px;
   border: 1px solid #rgba(80, 80, 80, 0.5);
   border-radius: 100%;
+}
+
+.comment-meta {
+  font-size: 12px;
 }
 
 /* Friend Links */

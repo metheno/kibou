@@ -1,5 +1,6 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
 <!DOCTYPE HTML>
 <html class="no-js">
   <head>
@@ -28,7 +29,17 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
     <!-- 转为 macOS 中 Safari 打造的毛玻璃效果 -->
-    <link href="<?php //$this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
+    <?php if ($this->options->enableTransparentBg == 0): ?>
+      <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
+      <style>
+        @supports (-webkit-backdrop-filter: none) {
+          body {
+            background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
+            background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
+          }
+        }
+      </style>
+    <?php endif; ?>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
