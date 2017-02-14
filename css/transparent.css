@@ -11,7 +11,7 @@
 
   body {
     color: rgba(255, 255, 255, 0.9);
-    background: url('');
+    background-size: cover;
   }
 
   .blog-masthead {
