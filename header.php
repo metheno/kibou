@@ -28,7 +28,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <link href="<?php $this->options->themeUrl('css/style.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
-    <!-- 转为 macOS 中 Safari 打造的毛玻璃效果 -->
+    <!-- 为 macOS 中 Safari 打造的毛玻璃效果 -->
     <?php if ($this->options->enableTransparentBg == 0): ?>
       <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
       <style>
@@ -37,6 +37,22 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
             background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
             background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
           }
+        }
+      </style>
+    <?php endif; ?>
+
+    <!-- 为阅读舒适性提供衬线字体 -->
+    <?php if ($this->options->enableSerifFont == 0): ?>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Roboto Slab', serif;
+        }
+      </style>
+    <?php else: ?>
+      <style>
+        body {
+          font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
         }
       </style>
     <?php endif; ?>

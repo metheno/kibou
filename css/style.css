@@ -14,7 +14,6 @@
 body {
   color: rgba(80, 80, 80, 1);
   background: rgba(244, 244, 244, 0.8);
-	font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -22,7 +21,6 @@ body {
 	padding-top: 8px;
 	color: #333;
 	font-weight: 400;
-	font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
   -webkit-user-select: none;
 }
 
@@ -180,7 +178,7 @@ nav {
 
 /* Buttons */
 
-.center-more {
+.center-padding {
   padding: 10px 0 20px 0;
 }
 
@@ -412,6 +410,27 @@ h2.blog-post-title a:hover {
 	padding-bottom: 10px;
   font-weight: 400;
   text-align: center;
+}
+
+.tags {
+  padding: 1px;
+  display: inline;
+  cursor: pointer;
+  width: auto;
+  height: 13px;
+  z-index: 8;
+  border: 1px dashed rgba(160, 160, 160, 1);
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(80, 80, 80, 1);
+  -webkit-user-select: none;
+}
+
+.tags:hover {
+  background-color: rgba(240, 240, 240, 1);
 }
 
 /* Comments */

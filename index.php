@@ -22,7 +22,7 @@ $this->need('header.php'); ?>
 
         <?php $this->content(); ?>
 
-        <center class="center-more"><a href="<?php $this->permalink() ?>" class="btn btn-theme btn-rounded"><?php _e('阅读更多'); ?></a></center>
+        <center class="center-padding"><a href="<?php $this->permalink() ?>" class="btn btn-theme btn-rounded"><?php _e('阅读更多'); ?></a></center>
       </div>
     </article><!-- /.blog-post -->
   <?php endwhile; ?>
