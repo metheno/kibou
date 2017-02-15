@@ -27,4 +27,4 @@ A simple Typecho theme Kibou based on Bootstrap.
 
 ### Optional
 
-- [ ] Create a transparent style for Safari
+- [x] Create a transparent style for Safari
