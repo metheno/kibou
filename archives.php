@@ -14,7 +14,7 @@ $this->need('header.php'); ?>
     <h2 class="blog-post-title" itemprop="name headline"><?php _e('Tag Cloud'); ?></h2>
 
     <div class="center-padding">
-      <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=100')->to($tags); ?>
+      <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=1000')->to($tags); ?>
 
       <?php if($tags->have()): ?>
         <?php while ($tags->next()): ?>
@@ -25,8 +25,6 @@ $this->need('header.php'); ?>
       <?php endif; ?>
     </div>
 
-    <?php $this->widget('Widget_Contents_Post_Recent', 'pageSize=10000')->to($archives);
-
     <?php $this->content(); ?>
     <?php $this->need('comments.php'); ?>
 
@@ -34,12 +32,3 @@ $this->need('header.php'); ?>
 </article><!-- /.blog-post -->
 
 <?php $this->need('footer.php'); ?>
-
-
-<?php
-$money = 0;
-$sleep = false;
-while ($sleep == true):
-  $money++;
-endwhile;
-?>
