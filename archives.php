@@ -14,7 +14,7 @@ $this->need('header.php'); ?>
     <h2 class="blog-post-title" itemprop="name headline"><?php _e('Tag Cloud'); ?></h2>
 
     <div class="center-padding">
-      <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=100000')->to($tags); ?>
+      <?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=mid&ignoreZeroCount=1&desc=0&limit=100')->to($tags); ?>
 
       <?php if($tags->have()): ?>
         <?php while ($tags->next()): ?>
