@@ -29,7 +29,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
     <!-- 为 macOS 中 Safari 打造的毛玻璃效果 -->
-    <?php if ($this->options->enableTransparentBg == 0): ?>
+    <?php if ($this->options->enableTransparent == 0): ?>
       <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
       <style>
         @supports (-webkit-backdrop-filter: none) {

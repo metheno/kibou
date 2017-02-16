@@ -1,8 +1,15 @@
 # typecho-theme-kibou
 
-A simple Typecho theme Kibou based on Bootstrap.
+A simple Typecho theme Kibou based on Twitter Bootstrap.
 
-发现 bug 求发 [Issue](https://github.com/metheno/typecho-theme-kibou/issues)
+发现 bug 求发 [Issue](https://github.com/metheno/typecho-theme-kibou/issues)。
+
+## Acknowledgements
+
+- [twbs/bootstrap](https://github.com/twbs/bootstrap)
+- [jquery/jquery](https://github.com/jquery/jquery)
+- [isagalaev/highlight.js](https://github.com/isagalaev/highlight.js)
+- [DIYgod/ASpace](https://github.com/DIYgod/ASpace/)
 
 ## Screenshots
 
@@ -28,3 +35,7 @@ A simple Typecho theme Kibou based on Bootstrap.
 ### Optional
 
 - [x] Create a transparent style for Safari
+
+## Links
+
+Demo: http://test.metheno.net/
