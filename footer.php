@@ -5,7 +5,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
               <center class="center-padding">
                 <form class="form-inline" id="search" method="post" action="./" role="search">
                   <div class="form-group">
-                    <input type="text" name="s" class="form-control" placeholder="<?php _e( '输入关键字搜索'); ?>">
+                    <input type="text" name="s" class="form-control" placeholder="<?php _e( '输入关键字搜索'); ?>" onchange="this.value = aSpace(this.value);">
                   </div>
                   <button type="submit" class="btn btn-transparent"><?php _e( '搜索'); ?></button>
                 </form>
@@ -27,9 +27,13 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/bootstrap.js'); ?>"></script>
 
-    <!-- Load highlight.js -->
+    <!-- Load Theme Dedicated JS -->
     <script src="<?php $this->options->themeUrl('js/highlight.js'); ?>"></script>
-    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script src="<?php $this->options->themeUrl('js/ASpace.js'); ?>"></script>
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+      aSpace(document.body);
+    </script>
 
     <!-- Optimize comments.php -->
     <script type="text/javascript">
