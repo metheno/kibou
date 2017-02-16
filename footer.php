@@ -7,7 +7,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
                   <div class="form-group">
                     <input type="text" name="s" class="form-control" placeholder="<?php _e( '输入关键字搜索'); ?>">
                   </div>
-                  <button type="submit" class="btn btn-primary"><?php _e( '搜索'); ?></button>
+                  <button type="submit" class="btn btn-transparent"><?php _e( '搜索'); ?></button>
                 </form>
               </center><!-- ./search -->
             <?php endif; ?>
@@ -17,11 +17,13 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         </div><!-- /.row -->
       </div><!-- /.container -->
 
-    <footer class="blog-footer">
-      <p>&copy; Copyright <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a></p>
-    </footer>
+    <center>
+      <footer class="blog-footer">
+        <p>&copy; Copyright <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a></p>
+      </footer>
+    </center>
 
-    <!-- Bootstrap Core JavaScripts -->
+    <!-- Core JavaScripts -->
     <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/bootstrap.js'); ?>"></script>
 

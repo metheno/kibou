@@ -462,9 +462,7 @@ h2.blog-post-title a:hover {
   .blog-footer {
     position: relative;
     width: 100%;
-    left: 50%;
     text-align: center;
-    transform: translateX(-50%);
     box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.3);
   }
 
