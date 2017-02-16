@@ -14,9 +14,9 @@ function themeConfig($form) {
 
 
   $enableTransparent = new Typecho_Widget_Helper_Form_Element_Radio('enableTransparent',
-    array('0' => _t('开启'),
-    '1' => _t('关闭')),
-    '1', _t('Safari 毛玻璃特效 (Beta)'), _t('默认为关闭'));
+    array('1' => _t('开启'),
+    '0' => _t('关闭')),
+    '0', _t('Safari 毛玻璃特效 (Beta)'), _t('默认为关闭'));
   $form->addInput($enableTransparent);
 
   $enableTransparentBg = new Typecho_Widget_Helper_Form_Element_Text('enableTransparentBg', NULL, NULL,
@@ -28,10 +28,20 @@ function themeConfig($form) {
   $form->addInput($enableTransparentBgPosition);
 
   $enableSerifFont = new Typecho_Widget_Helper_Form_Element_Radio('enableSerifFont',
-    array('0' => _t('开启'),
-    '1' => _t('关闭')),
-    '1', _t('正文使用衬线字体'), _t('关闭状况下<b>正文</b>字体使用 Roboto、苹方、微软雅黑。开启后使用 Roboto Slab。<br/>该设置对各个标题不生效。'));
+    array('1' => _t('开启'),
+    '0' => _t('关闭')),
+    '0', _t('正文使用衬线字体'), _t('关闭状况下<b>正文</b>字体使用 Roboto、苹方、微软雅黑。开启后使用 Roboto Slab。<br/>该设置对各个标题不生效。'));
   $form->addInput($enableSerifFont);
+
+  $dnsPrefetch = new Typecho_Widget_Helper_Form_Element_Radio('dnsPrefetch',
+    array('1' => _t('开启'),
+    '0' => _t('关闭')),
+    '0', _t('DNS Prefetch'), _t('默认为关闭。<br/>开启后会对 Google Fonts 和 Gravatar 进行预获取。'));
+  $form->addInput($dnsPrefetch);
+
+  $dnsPrefetch_Add = new Typecho_Widget_Helper_Form_Element_Text('dnsPrefetch_Add', NULL, NULL,
+  _t('添加一条 DNS Prefetch'), _t('填写一个 URL。例如：<code>//ewiuegqiwefweif.qnssl.com'));
+  $form->addInput($dnsPrefetch_Add);
 
   /*
   $faviconUrl = new Typecho_Widget_Helper_Form_Element_Text('faviconUrl', NULL, NULL, _t('站点 favicon.ico URL'), _t('在这里填入一个 .ico 图标的 URL 地址。'));

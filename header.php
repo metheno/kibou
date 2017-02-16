@@ -5,9 +5,18 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <html class="no-js">
   <head>
     <meta charset="<?php $this->options->charset(); ?>">
+    <!-- DNS Prefetch -->
+    <?php if ($this->options->dnsPrefetch == 1): ?>
+      <meta http-equiv="x-dns-prefetch-control" content="on">
+      <link rel="dns-prefetch" href="//fonts.googleapis.com">
+      <link rel="dns-prefetch" href="//secure.gravatar.com">
+      <?php if ($this->options->dnsPrefetch_Add): ?>
+        <link rel="dns-prefetch" href="<?php $this->options->dnsPrefetch_Add(); ?>">
+      <?php endif; ?>
+    <?php endif; ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="<?php $this->options->description(); ?>">
     <meta name="author" content="<?php $this->author(); ?>">
     <!-- 必须在最上面 -->
@@ -23,13 +32,13 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <!-- Bootstrap -->
     <link href="<?php $this->options->themeUrl('css/bootstrap.css'); ?>" rel="stylesheet">
 
-    <!-- Theme Kibou 所使用的 CSS -->
+    <!-- Tsheme Kibou -->
     <link href="<?php $this->options->themeUrl('css/normalize.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/style.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
-    <!-- 为 macOS 中 Safari 打造的毛玻璃效果 -->
-    <?php if ($this->options->enableTransparent == 0): ?>
+    <!-- Transparent styles for Safari -->
+    <?php if ($this->options->enableTransparent == 1): ?>
       <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
       <style>
         @supports (-webkit-backdrop-filter: none) {
@@ -41,8 +50,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       </style>
     <?php endif; ?>
 
-    <!-- 为阅读舒适性提供衬线字体 -->
-    <?php if ($this->options->enableSerifFont == 0): ?>
+    <!-- Font Family for Better Reading -->
+    <?php if ($this->options->enableSerifFont == 1): ?>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
       <style>
         body {
@@ -50,6 +59,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         }
       </style>
     <?php else: ?>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,600italic,700italic,100,300,400,600,700" rel="stylesheet">
       <style>
         body {
           font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
