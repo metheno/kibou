@@ -441,7 +441,7 @@ h2.blog-post-title a:hover {
   height: 48px;
   max-width: 48px;
   max-height: 48px;
-  border: 1px solid #rgba(80, 80, 80, 0.5);
+  border: 1px solid rgba(80, 80, 80, 0.5);
   border-radius: 100%;
 }
 

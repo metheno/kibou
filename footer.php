@@ -32,7 +32,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <script src="<?php $this->options->themeUrl('js/ASpace.js'); ?>"></script>
     <script type="text/javascript">
       hljs.initHighlightingOnLoad();
-      aSpace(document.body);
+      aSpace(document.getElementsByClassName('blog-post'));
     </script>
 
     <!-- Optimize comments.php -->
