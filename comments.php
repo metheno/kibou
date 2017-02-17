@@ -59,7 +59,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <form method="post" action="<?php $this->commentUrl() ?>" id="comment-form" role="form">
       <h3 id="response"><?php _e('添加新评论'); ?></h3>
       <?php if($this->user->hasLogin()): ?>
-      <p class="help-block"><?php _e('已登陆：'); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>。<a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('不是？退出'); ?> &raquo;</a></p>
+      <p><?php _e('已登陆：'); ?><a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>。<a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('不是？退出'); ?> &raquo;</a></p>
       <?php else: ?>
       <p class="help-block">
       <div class="row">
