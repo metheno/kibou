@@ -5,7 +5,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <html class="no-js">
   <head>
     <meta charset="<?php $this->options->charset(); ?>">
-    <!-- DNS Prefetch -->
     <?php if ($this->options->dnsPrefetch == 1): ?>
       <meta http-equiv="x-dns-prefetch-control" content="on">
       <link rel="dns-prefetch" href="//fonts.googleapis.com">

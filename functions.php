@@ -33,6 +33,14 @@ function themeConfig($form) {
     '0', _t('正文使用衬线字体'), _t('关闭状况下<b>正文</b>字体使用 Roboto、苹方、微软雅黑。开启后使用 Roboto Slab。<br/>该设置对各个标题不生效。'));
   $form->addInput($enableSerifFont);
 
+  echo '<hr/>';
+
+  $enableMathJax = new Typecho_Widget_Helper_Form_Element_Radio('enableMathJax',
+    array('1' => _t('开启'),
+    '0' => _t('关闭')),
+    '0', _t('MathJax 支持'), _t('默认为关闭'));
+  $form->addInput($enableMathJax);
+
   $dnsPrefetch = new Typecho_Widget_Helper_Form_Element_Radio('dnsPrefetch',
     array('1' => _t('开启'),
     '0' => _t('关闭')),
@@ -40,8 +48,14 @@ function themeConfig($form) {
   $form->addInput($dnsPrefetch);
 
   $dnsPrefetch_Add = new Typecho_Widget_Helper_Form_Element_Text('dnsPrefetch_Add', NULL, NULL,
-  _t('添加一条 DNS Prefetch'), _t('填写一个 URL。例如：<code>//ewiuegqiwefweif.qnssl.com'));
+  _t('添加一条 DNS Prefetch'), _t('填写一个 URL。例如：<code>//ewiuegqiwefweif.qnssl.com</code>。'));
   $form->addInput($dnsPrefetch_Add);
+
+  echo '<hr/>';
+
+  $analyticsGoogle = new Typecho_Widget_Helper_Form_Element_Textarea('analyticsGoogle', NULL, NULL,
+  _t('Google Analytics 代码'), _t('填写你的 Google Analytics 代码。不需要加 <code>script</code> 标签'));
+  $form->addInput($analyticsGoogle);
 
   /*
   $faviconUrl = new Typecho_Widget_Helper_Form_Element_Text('faviconUrl', NULL, NULL, _t('站点 favicon.ico URL'), _t('在这里填入一个 .ico 图标的 URL 地址。'));

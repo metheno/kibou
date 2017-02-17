@@ -45,6 +45,29 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         };
       });
     </script>
+    <?php if ($this->options->analyticsGoogle): ?>
+      <!-- Google Analytics -->
+      <script>
+        <?php $this->options->analyticsGoogle(); ?>
+      </script>
+    <?php endif; ?>
+
+    <?php if ($this->options->enableMathJax == 1): ?>
+      <!-- MathJax Supports -->
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          extensions: ["tex2jax.js"],
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+          },
+          "HTML-CSS": { availableFonts: ["TeX"] }
+        });
+      </script>
+    <?php endif; ?>
 
   </body>
 </html>
