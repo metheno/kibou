@@ -52,7 +52,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
   <?php if($this->allow('comment')): ?>
   <div id="<?php $this->respondId(); ?>" class="respond">
-    <div id="cancel-reply-btn" class="btn btn-xs btn-default">
+    <div id="cancel-reply-btn" class="btn btn-xs btn-transparent">
       <?php $comments->cancelReply(); ?>
     </div>
 

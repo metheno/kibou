@@ -24,7 +24,7 @@ function themeConfig($form) {
   $form->addInput($enableTransparentBg);
 
   $enableTransparentBgPosition = new Typecho_Widget_Helper_Form_Element_Text('enableTransparentBgPosition', NULL, NULL,
-  _t('毛玻璃特效 背景图位置'), _t('为 <code>body</code> 添加一个 <code>bacground-position</code>。例如：<code>right</code>。<br/>该设置仅在 <b>Safari 毛玻璃特效</b> <b style="color:red;">开启</b> 时生效，且仅在 Safari 可见。'));
+  _t('毛玻璃特效 背景图位置'), _t('为 <code>body</code> 添加一个 <code>background-position</code>。例如：<code>right</code>。<br/>该设置仅在 <b>Safari 毛玻璃特效</b> <b style="color:red;">开启</b> 时生效，且仅在 Safari 可见。'));
   $form->addInput($enableTransparentBgPosition);
 
   $enableSerifFont = new Typecho_Widget_Helper_Form_Element_Radio('enableSerifFont',
