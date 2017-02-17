@@ -36,7 +36,7 @@ function themeConfig($form) {
   $enableMathJax = new Typecho_Widget_Helper_Form_Element_Radio('enableMathJax',
     array('1' => _t('开启'),
     '0' => _t('关闭')),
-    '0', _t('MathJax 支持'), _t('默认为关闭'));
+    '0', _t('MathJax 支持'), _t('默认为关闭。<br/>单行：<code>$...$</code>；<br/>多行：<code>$$...$$</code>。'));
   $form->addInput($enableMathJax);
 
   $dnsPrefetch = new Typecho_Widget_Helper_Form_Element_Radio('dnsPrefetch',
