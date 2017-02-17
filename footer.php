@@ -45,6 +45,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         };
       });
     </script>
+    
     <?php if ($this->options->analyticsGoogle): ?>
       <!-- Google Analytics -->
       <script>
