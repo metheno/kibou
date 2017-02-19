@@ -84,6 +84,11 @@ pre {
   border: none;
 }
 
+.hljs {
+  white-space: pre;
+  -webkit-overflow-scrolling
+}
+
 sub,
 sup {
   font-size: 75%;
@@ -246,6 +251,7 @@ nav {
 /* Nav */
 
 .blog-masthead {
+  left: 50%;
   display: block;
   text-align: center;
   background-color: rgba(80, 80, 80, 1);
