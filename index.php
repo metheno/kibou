@@ -4,7 +4,7 @@
  *
  * @package Kibou
  * @author metheno
- * @version 0.1.1
+ * @version 0.1.4
  * @link http://www.metheno.net
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
@@ -22,7 +22,7 @@ $this->need('header.php'); ?>
 
         <?php $this->content(); ?>
 
-        <center class="center-more"><a href="<?php $this->permalink() ?>" class="btn read-more"><?php _e('阅读更多'); ?></a></center>
+        <center class="center-padding"><a href="<?php $this->permalink() ?>" class="btn btn-theme btn-rounded"><?php _e('阅读更多'); ?></a></center>
       </div>
     </article><!-- /.blog-post -->
   <?php endwhile; ?>

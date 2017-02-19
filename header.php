@@ -1,12 +1,21 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+
 <!DOCTYPE HTML>
 <html class="no-js">
   <head>
     <meta charset="<?php $this->options->charset(); ?>">
+    <?php if ($this->options->dnsPrefetch == 1): ?>
+      <meta http-equiv="x-dns-prefetch-control" content="on">
+      <link rel="dns-prefetch" href="//fonts.googleapis.com">
+      <link rel="dns-prefetch" href="//secure.gravatar.com">
+      <?php if ($this->options->dnsPrefetch_Add): ?>
+        <link rel="dns-prefetch" href="<?php $this->options->dnsPrefetch_Add(); ?>">
+      <?php endif; ?>
+    <?php endif; ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="<?php $this->options->description(); ?>">
     <meta name="author" content="<?php $this->author(); ?>">
     <!-- 必须在最上面 -->
@@ -22,13 +31,40 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <!-- Bootstrap -->
     <link href="<?php $this->options->themeUrl('css/bootstrap.css'); ?>" rel="stylesheet">
 
-    <!-- Theme Kibou 所使用的 CSS -->
+    <!-- Tsheme Kibou -->
     <link href="<?php $this->options->themeUrl('css/normalize.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/style.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
-    <!-- 转为 macOS 中 Safari 打造的毛玻璃效果 -->
-    <link href="<?php //$this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
+    <!-- Transparent styles for Safari -->
+    <?php if ($this->options->enableTransparent == 1): ?>
+      <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
+      <style>
+        @supports (-webkit-backdrop-filter: none) {
+          body {
+            background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
+            background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
+          }
+        }
+      </style>
+    <?php endif; ?>
+
+    <!-- Font Family for Better Reading -->
+    <?php if ($this->options->enableSerifFont == 1): ?>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Roboto Slab', serif;
+        }
+      </style>
+    <?php else: ?>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,600italic,700italic,100,300,400,600,700" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
+        }
+      </style>
+    <?php endif; ?>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -44,7 +80,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
     <![endif]-->
 
-    <div class="blog-masthead">
+    <div class="blog-masthead navbar-fixed-top">
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item <?php if($this->is('index')): echo "active"; endif; ?>" href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
@@ -63,7 +99,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     </div>
 
 
-    <div class="container">
+    <div class="container blog-container">
 
       <!-- Header -->
       <div class="blog-header">
