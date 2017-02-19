@@ -71,5 +71,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       </script>
     <?php endif; ?>
 
+    <!-- navbar-fixed-top -->
+    <script type="text/javascript">
+
+    </script>
+
   </body>
 </html>

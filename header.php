@@ -80,7 +80,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
     <![endif]-->
 
-    <div class="blog-masthead">
+    <div class="blog-masthead navbar-fixed-top">
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item <?php if($this->is('index')): echo "active"; endif; ?>" href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
@@ -99,7 +99,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     </div>
 
 
-    <div class="container">
+    <div class="container blog-container">
 
       <!-- Header -->
       <div class="blog-header">
