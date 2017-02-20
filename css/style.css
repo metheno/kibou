@@ -80,7 +80,7 @@ pre {
   font-weight: 400;
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 2px 5px rgba(80, 80, 80, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   border: none;
 }
 
@@ -127,16 +127,16 @@ video {
   border-top-right-radius: 5px;
 }
 
-/* Pagination */
-
 nav {
   padding: 10px 0 0 0;
   text-align: center;
 }
 
+/* Pagination */
+
 .pagination {
   border-radius: 3px;
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .pagination > li > a, .pagination > li > span {
@@ -221,29 +221,6 @@ nav {
   background-image: none;
 }
 
-.btn-huge {
-  padding: 13px 50px;
-  font-size: 15px;
-  font-weight: 400;
-  border: none;
-  border-radius: 50px;
-  color: inherit;
-  background-color: rgba(244, 244, 244, 0);
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
-  transition: all 0.2s;
-}
-
-.btn-huge:hover, .btn-huge:focus {
-  color: inherit;
-  background-color: rgba(244, 244, 244, 1);
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
-}
-
-.btn-huge:active {
-  color: inherit;
-  box-shadow: inset 0px 2px 5px rgba(80, 80, 80, 0.2);
-}
-
 .btn-rounded {
   border-radius: 50px;
 }
@@ -254,7 +231,10 @@ nav {
   display: block;
   text-align: center;
   background-color: rgba(80, 80, 80, 1);
-  box-shadow: inset 0px -10px 10px rgba(50, 50, 50, 0.5);
+  overflow: hidden;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 .blog-masthead::before {
@@ -262,7 +242,7 @@ nav {
   display: block;
   text-align: center;
   background-color: rgba(80, 80, 80, 1);
-  box-shadow: inset 0px -10px 10px rgba(50, 50, 50, 0.5);
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .blog-nav {
@@ -338,7 +318,7 @@ nav {
   font-size: 15px;
   line-height: 1.5;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.2);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -417,27 +397,6 @@ h2.blog-post-title a:hover {
   text-align: center;
 }
 
-.tags {
-  padding: 1px;
-  display: inline;
-  cursor: pointer;
-  width: auto;
-  height: 13px;
-  z-index: 8;
-  border: 1px dashed rgba(160, 160, 160, 1);
-  background-color: rgba(240, 240, 240, 1);
-  border-radius: 8px;
-  font-family: monospace;
-  font-size: 12px;
-  text-align: center;
-  color: rgba(80, 80, 80, 1);
-  -webkit-user-select: none;
-}
-
-.tags:hover {
-  background-color: rgba(240, 240, 240, 1);
-}
-
 /* Comments */
 
 .avatar {
@@ -456,113 +415,6 @@ h2.blog-post-title a:hover {
 
 /* Friend Links */
 
-/* Responsive */
-
-@media screen and (min-width: 768px) {
-
-  .container {
-    width: 768px;
-  }
-
-  .blog-footer {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.3);
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  .container {
-    width: 100%;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  h4 {
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-
-  h5 {
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-  h6 {
-    font-size: 13px;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .blog-title {
-    margin-top: 30px;
-    margin-bottom: 0;
-    font-weight: 100;
-    font-size: 36px;
-  }
-
-  .blog-description {
-    color: #999;
-    font-size: 16px;
-  }
-
-  .blog-nav-item {
-    position: relative;
-    display: inline-block;
-    padding: 12px 15px 10px 15px;
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 300;
-    transition: all 0.3s;
-    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
-  }
-
-  .blog-main {
-    padding: 25px;
-  }
-
-  .blog-post-title {
-    font-size: 28px;
-  }
-
-  .blog-post-meta {
-    font-size: 14px;
-  }
-
-  .blog-footer {
-    width: 100%;
-    padding: 25px 0;
-    border-radius: 0;
-  }
-
-  .blog-footer p {
-    font-size: 10px;
-    line-height: 1;
-  }
-
-  .blog-footer p span.shaky {
-    font-size: 9px;
-    line-height: 1;
-  }
-
-  .MathJax_Display {
-    text-align: center;
-    font-size: 12px;
-  }
-
-}
-
 /* Browse Happy */
 
 .browsehappy {
@@ -576,7 +428,7 @@ h2.blog-post-title a:hover {
   color:#8A1F11;
 }
 
-/* shaky class from https://sa.bi/ */
+/* Misc */
 
 .shaky {
   display: inline-block;
@@ -908,4 +760,124 @@ h2.blog-post-title a:hover {
   98% {
     transform: translate(1.3px, 1px) rotate(-0.5deg)
   }
+}
+
+.navbar-fixed-top {
+  -webkit-transition: all cubic-bezier(.35,.98,.35,.98) .7s;
+  transition: all cubic-bezier(.35,.98,.35,.98) .7s;
+}
+
+.nav-up {
+  top: -52px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    width: 768px;
+  }
+
+  .blog-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 36px;
+  }
+
+  .blog-description {
+    color: #999;
+    font-size: 16px;
+  }
+
+  .blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 12px 15px 10px 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    transition: all 0.3s;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+  }
+
+  .blog-main {
+    padding: 25px;
+  }
+
+  .blog-post-title {
+    font-size: 28px;
+  }
+
+  .blog-post-meta {
+    font-size: 14px;
+  }
+
+  .blog-footer {
+    width: 100%;
+    padding: 25px 0;
+    border-radius: 0;
+  }
+
+  .blog-footer p {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .blog-footer p span.shaky {
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .MathJax_Display {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .nav-up {
+    top: -42px;
+  }
+
 }
