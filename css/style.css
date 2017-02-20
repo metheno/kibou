@@ -763,8 +763,8 @@ h2.blog-post-title a:hover {
 }
 
 .navbar-fixed-top {
-  -webkit-transition: all cubic-bezier(0,1,.7,1) .4s;
-  transition: all cubic-bezier(0,1,.7,1) .4s;
+  -webkit-transition: all cubic-bezier(0,1,.7,1) .7s;
+  transition: all cubic-bezier(0,1,.7,1) .7s;
 }
 
 .nav-up {
