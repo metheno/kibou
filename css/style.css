@@ -80,7 +80,7 @@ pre {
   font-weight: 400;
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 2px 5px rgba(80, 80, 80, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   border: none;
 }
 
@@ -136,7 +136,7 @@ nav {
 
 .pagination {
   border-radius: 3px;
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .pagination > li > a, .pagination > li > span {
@@ -229,19 +229,19 @@ nav {
   border-radius: 50px;
   color: inherit;
   background-color: rgba(244, 244, 244, 0);
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
 }
 
 .btn-huge:hover, .btn-huge:focus {
   color: inherit;
   background-color: rgba(244, 244, 244, 1);
-  box-shadow: 0px 1px 3px rgba(80, 80, 80, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .btn-huge:active {
   color: inherit;
-  box-shadow: inset 0px 2px 5px rgba(80, 80, 80, 0.2);
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn-rounded {
@@ -257,7 +257,7 @@ nav {
   overflow: hidden;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 .blog-masthead::before {
@@ -265,7 +265,7 @@ nav {
   display: block;
   text-align: center;
   background-color: rgba(80, 80, 80, 1);
-  box-shadow: inset 0px -10px 10px rgba(50, 50, 50, 0.5);
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .blog-nav {
@@ -341,7 +341,7 @@ nav {
   font-size: 15px;
   line-height: 1.5;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.2);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -450,7 +450,7 @@ h2.blog-post-title a:hover {
     position: relative;
     width: 100%;
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   }
 
 }
