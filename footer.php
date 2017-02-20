@@ -31,21 +31,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <!-- Load Theme Dedicated JS -->
     <script src="<?php $this->options->themeUrl('js/highlight.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/ASpace.js'); ?>"></script>
-    <script type="text/javascript">
-      hljs.initHighlightingOnLoad();
-      aSpace(document.getElementsByClassName('blog-post'));
-    </script>
-
-    <!-- Optimize comments.php -->
-    <script type="text/javascript">
-      $(document).ready(function(){
-        var reply_btn_display = $('#cancel-comment-reply-link').css('display');
-        $(".comment-list:first").removeClass("comment-list").addClass('media-list');
-        if(reply_btn_display == 'none'){
-          $("#cancel-reply-btn").css('display', 'none');
-        };
-      });
-    </script>
+    <script src="<?php $this->options->themeUrl('js/loadup.js'); ?>"></script>
 
     <?php if ($this->options->analyticsGoogle): ?>
       <!-- Google Analytics -->
@@ -70,11 +56,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         });
       </script>
     <?php endif; ?>
-
-    <!-- navbar-fixed-top -->
-    <script type="text/javascript">
-
-    </script>
 
   </body>
 </html>

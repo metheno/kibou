@@ -127,12 +127,12 @@ video {
   border-top-right-radius: 5px;
 }
 
-/* Pagination */
-
 nav {
   padding: 10px 0 0 0;
   text-align: center;
 }
+
+/* Pagination */
 
 .pagination {
   border-radius: 3px;
@@ -219,29 +219,6 @@ nav {
 
 .btn-theme:active, .btn-theme.active, .open > .dropdown-toggle.btn-theme {
   background-image: none;
-}
-
-.btn-huge {
-  padding: 13px 50px;
-  font-size: 15px;
-  font-weight: 400;
-  border: none;
-  border-radius: 50px;
-  color: inherit;
-  background-color: rgba(244, 244, 244, 0);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  transition: all 0.2s;
-}
-
-.btn-huge:hover, .btn-huge:focus {
-  color: inherit;
-  background-color: rgba(244, 244, 244, 1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.btn-huge:active {
-  color: inherit;
-  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn-rounded {
@@ -438,113 +415,6 @@ h2.blog-post-title a:hover {
 
 /* Friend Links */
 
-/* Responsive */
-
-@media screen and (min-width: 768px) {
-
-  .container {
-    width: 768px;
-  }
-
-  .blog-footer {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  .container {
-    width: 100%;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  h4 {
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-
-  h5 {
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-
-  h6 {
-    font-size: 13px;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .blog-title {
-    margin-top: 30px;
-    margin-bottom: 0;
-    font-weight: 100;
-    font-size: 36px;
-  }
-
-  .blog-description {
-    color: #999;
-    font-size: 16px;
-  }
-
-  .blog-nav-item {
-    position: relative;
-    display: inline-block;
-    padding: 12px 15px 10px 15px;
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 300;
-    transition: all 0.3s;
-    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
-  }
-
-  .blog-main {
-    padding: 25px;
-  }
-
-  .blog-post-title {
-    font-size: 28px;
-  }
-
-  .blog-post-meta {
-    font-size: 14px;
-  }
-
-  .blog-footer {
-    width: 100%;
-    padding: 25px 0;
-    border-radius: 0;
-  }
-
-  .blog-footer p {
-    font-size: 10px;
-    line-height: 1;
-  }
-
-  .blog-footer p span.shaky {
-    font-size: 9px;
-    line-height: 1;
-  }
-
-  .MathJax_Display {
-    text-align: center;
-    font-size: 12px;
-  }
-
-}
-
 /* Browse Happy */
 
 .browsehappy {
@@ -558,7 +428,7 @@ h2.blog-post-title a:hover {
   color:#8A1F11;
 }
 
-/* shaky class from https://sa.bi/ */
+/* Misc */
 
 .shaky {
   display: inline-block;
@@ -890,4 +760,124 @@ h2.blog-post-title a:hover {
   98% {
     transform: translate(1.3px, 1px) rotate(-0.5deg)
   }
+}
+
+.navbar {
+  -webkit-transition: all cubic-bezier(0,1,.7,1) .4s;
+  transition: all cubic-bezier(0,1,.7,1) .4s;
+}
+
+.nav-up {
+  top: -52px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    width: 768px;
+  }
+
+  .blog-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 36px;
+  }
+
+  .blog-description {
+    color: #999;
+    font-size: 16px;
+  }
+
+  .blog-nav-item {
+    position: relative;
+    display: inline-block;
+    padding: 12px 15px 10px 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    transition: all 0.3s;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+  }
+
+  .blog-main {
+    padding: 25px;
+  }
+
+  .blog-post-title {
+    font-size: 28px;
+  }
+
+  .blog-post-meta {
+    font-size: 14px;
+  }
+
+  .blog-footer {
+    width: 100%;
+    padding: 25px 0;
+    border-radius: 0;
+  }
+
+  .blog-footer p {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .blog-footer p span.shaky {
+    font-size: 9px;
+    line-height: 1;
+  }
+
+  .MathJax_Display {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .nav-up {
+    top: -42px;
+  }
+
 }
