@@ -9,6 +9,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       <meta http-equiv="x-dns-prefetch-control" content="on">
       <link rel="dns-prefetch" href="//fonts.googleapis.com">
       <link rel="dns-prefetch" href="//secure.gravatar.com">
+      <link rel="dns-prefetch" href="//cdn.bootcss.com">
       <?php if ($this->options->dnsPrefetch_Add): ?>
         <link rel="dns-prefetch" href="<?php $this->options->dnsPrefetch_Add(); ?>">
       <?php endif; ?>
@@ -18,9 +19,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="<?php $this->options->description(); ?>">
     <meta name="author" content="<?php $this->author(); ?>">
-    <!-- 必须在最上面 -->
+    <!-- The above meta tags must be at top. -->
 
-    <!-- 页面标题 -->
+    <!-- Page Title -->
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -31,42 +32,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <!-- Bootstrap -->
     <link href="<?php $this->options->themeUrl('css/bootstrap.css'); ?>" rel="stylesheet">
 
-    <!-- Tsheme Kibou -->
+    <!-- Styles for Theme Kibou -->
     <link href="<?php $this->options->themeUrl('css/normalize.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/style.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
-    <!-- Transparent styles for Safari -->
-    <?php if ($this->options->enableTransparent == 1): ?>
-      <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
-      <style>
-        @supports (-webkit-backdrop-filter: none) {
-          body {
-            background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
-            background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
-          }
-        }
-      </style>
-    <?php endif; ?>
+    <?php $this->need('component/pageload.php'); ?>
 
-    <!-- Font Family for Better Reading -->
-    <?php if ($this->options->enableSerifFont == 1): ?>
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-      <style>
-        body {
-          font-family: 'Roboto Slab', serif;
-        }
-      </style>
-    <?php else: ?>
-      <link href="https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,600italic,700italic,100,300,400,600,700" rel="stylesheet">
-      <style>
-        body {
-          font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
-        }
-      </style>
-    <?php endif; ?>
-
-    <!--[if lt IE 9]>
+    <!--[if lt IE 10]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
