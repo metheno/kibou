@@ -1,8 +1,8 @@
 # typecho-theme-kibou
 
-A simple Typecho theme Kibou based on Twitter Bootstrap.
+A minimal Typecho theme based on Bootstrap designed for a better reading experience. 
 
-发现 bug 求发 [Issue](https://github.com/metheno/typecho-theme-kibou/issues)。
+Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues).
 
 ## Acknowledgements
 

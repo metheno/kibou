@@ -86,7 +86,7 @@ pre {
 
 .hljs {
   white-space: pre;
-  -webkit-overflow-scrolling
+  -webkit-overflow-scrolling: scroll;
 }
 
 sub,
@@ -231,18 +231,7 @@ nav {
   display: block;
   text-align: center;
   background-color: rgba(80, 80, 80, 1);
-  overflow: hidden;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-
-.blog-masthead::before {
-  left: 50%;
-  display: block;
-  text-align: center;
-  background-color: rgba(80, 80, 80, 1);
-  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .blog-nav {
@@ -763,8 +752,8 @@ h2.blog-post-title a:hover {
 }
 
 .navbar-fixed-top {
-  -webkit-transition: all cubic-bezier(.35,.98,.35,.98) .7s;
-  transition: all cubic-bezier(.35,.98,.35,.98) .7s;
+  -webkit-transition: all cubic-bezier(.35,.98,.35,.98) .4s;
+  transition: all cubic-bezier(.35,.98,.35,.98) .4s;
 }
 
 .nav-up {

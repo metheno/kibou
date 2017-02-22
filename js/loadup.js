@@ -55,9 +55,9 @@ function hasScrolled() {
 // Optimize comments.php
 
 $(document).ready(function(){
-  var reply_btn_display = $('#cancel-comment-reply-link').css('display');
+  var replyBtnDisplay = $('#cancel-comment-reply-link').css('display');
   $(".comment-list:first").removeClass("comment-list").addClass('media-list');
-  if(reply_btn_display == 'none'){
+  if(replyBtnDisplay == 'none'){
     $("#cancel-reply-btn").css('display', 'none');
   };
 });
