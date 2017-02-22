@@ -10,8 +10,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * Description:
  */
 
-require_once("lib/Ua.php");
-
 function themeConfig($form) {
 
   $enableTransparent = new Typecho_Widget_Helper_Form_Element_Radio('enableTransparent',
