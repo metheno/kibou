@@ -2,7 +2,7 @@
 * style.css
 *
 * Author     : metheno
-* Date       : 2017/02/11
+* Date       : 2017/02/24
 * Version    :
 * Description:
 */
@@ -221,8 +221,72 @@ nav {
   background-image: none;
 }
 
+.btn-transparent {
+  text-decoration: none;
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-transparent:focus, .btn-transparent.focus {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-transparent:hover {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 0.5);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-transparent:active, .btn-transparent.active, .open > .dropdown-toggle.btn-transparent {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 1);
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-transparent:active:hover, .btn-transparent.active:hover, .open > .dropdown-toggle.btn-transparent:hover,
+.btn-transparent:active:focus, .btn-transparent.active:focus, .open > .dropdown-toggle.btn-transparent:focus,
+.btn-transparent:active.focus, .btn-transparent.active.focus, .open > .dropdown-toggle.btn-transparent.focus {
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(244, 244, 244, 0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-transparent:active, .btn-transparent.active, .open > .dropdown-toggle.btn-transparent {
+  background-image: none;
+}
+
+
 .btn-rounded {
   border-radius: 50px;
+}
+
+/* Input */
+.form-control {
+  border-color: rgba(255, 255, 255, 0);
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.form-control:focus {
+  border-color: rgba(255, 255, 255, 0);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+}
+
+.form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Nav */
