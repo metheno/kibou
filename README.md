@@ -23,7 +23,7 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 - Minimal (as in art, not in size) and simple
 - Fully responsive, good for smartphones
 - A transparent style designed for Safari users
-- Highlight <code> tag with highlight.js
+- Highlight \<code\> tag with highlight.js
 - A simple [Tag Cloud page](http://test.metheno.net/tags.html)
 - DNS prefetch for faster loading speed
 - Able to switch to serif font for more comfortable reading in English
