@@ -450,6 +450,48 @@ h2.blog-post-title a:hover {
   text-align: center;
 }
 
+.archives-loop-ol {
+  padding: 0;
+  list-style: none;
+}
+
+.archives-loop-li {
+  display: block;
+  cursor: pointer;
+  color: inherit;
+  line-height: 2;
+  margin: 10px 1px;
+  padding: 7px 10px 5px 15px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.02);
+  transition: all 0.3s;
+}
+
+.archives-loop-li:hover {
+  text-decoration: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.archives-tags {
+  display: inline-block;
+  cursor: pointer;
+  color: inherit;
+  padding: 6px 10px 4px 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.02);
+  transition: all 0.3s;
+}
+
+.archives-tags:hover {
+  text-decoration: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Comments */
 
 .avatar {
