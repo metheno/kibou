@@ -3,10 +3,22 @@
 <?php if ($this->options->enableTransparent == 1): ?>
   <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
   <style>
-    @supports (-webkit-backdrop-filter: none) {
+    @supports (-webkit-backdrop-filter: none) or (-webkit-filter: blur(20px)) or (-ms-filter: blur(20px)) or (-o-filter: blur(20px)) or (filter: blur(20px)) {
       body {
         background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
         background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
+      }
+
+      @supports not (-webkit-backdrop-filter: none){
+        .blog-masthead::before {
+          background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
+        }
+        .blog-main::before {
+          background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
+        }
+        .blog-footer::before {
+          background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
+        }
       }
     }
   </style>
