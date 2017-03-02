@@ -16,13 +16,15 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 ![Kibou Header](https://im01.metheno.net/images/170212/kibou_index.png)
 ![Kibou Post](https://im01.metheno.net/images/170212/kibou_post.png)
 ![Kibou Footer](https://im01.metheno.net/images/170212/kibou_footer.png)
+![Kibou transparent Safari](http://typecho-mori.oss-cn-shanghai.aliyuncs.com/screenshot.jpg)
+![Kibou transparent Chrome](http://typecho-mori.oss-cn-shanghai.aliyuncs.com/screenshot2.jpg)
 
 ## Features
 
 - Based on Bootstrap
 - Minimal (as in art, not in size) and simple
 - Fully responsive, good for smartphones
-- A transparent style designed for Safari users
+- A transparent style designed for **Safari** **Chrome** **FireFox** users
 - Highlight \<code\> tag with highlight.js
 - A simple [Tag Cloud page](http://test.metheno.net/tags.html)
 - DNS prefetch for faster loading speed
@@ -42,8 +44,14 @@ If you wish to contribute to this theme, please fork this repository and send a 
 
 Thank you for your help.
 
+
 ## Links
 
 Demo: http://test.metheno.net/
 
 Author: https://www.metheno.net/
+
+
+Contributer:
+
+- moriW : https://www.moridisa.cn	
