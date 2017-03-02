@@ -94,4 +94,4 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       </div>
 
       <div class="row">
-        <div class="blog-main">
+        <div class="col-md-12 blog-main">
