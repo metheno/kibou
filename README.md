@@ -16,8 +16,8 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 ![Kibou Header](https://im01.metheno.net/images/170212/kibou_index.png)
 ![Kibou Post](https://im01.metheno.net/images/170212/kibou_post.png)
 ![Kibou Footer](https://im01.metheno.net/images/170212/kibou_footer.png)
-![Kibou transparent Safari](http://typecho-mori.oss-cn-shanghai.aliyuncs.com/screenshot.jpg)
-![Kibou transparent Chrome](http://typecho-mori.oss-cn-shanghai.aliyuncs.com/screenshot2.jpg)
+![Kibou transparent Safari](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot.jpg)
+![Kibou transparent Chrome](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot2.jpg)
 
 ## Features
 
