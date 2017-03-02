@@ -1,24 +1,23 @@
 /**
  * transparent.css
  *
- * Author     : metheno
- * Date       : 2017/02/24
+ * Author     : metheno Mori
+ * Date       : 2017/02/28
  * Version    :
  * Description:
  */
 
-@supports (-webkit-backdrop-filter: none) {
+@supports (-webkit-backdrop-filter: blur(20px)) or (-webkit-filter: blur(20px)) or (-ms-filter: blur(20px)) or (-o-filter: blur(20px)) or (filter: blur(20px))  {
 
   body {
     color: rgba(255, 255, 255, 0.9);
-  	background-attachment: fixed;
-  	background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .blog-masthead {
-  	background-color: rgba(60, 60, 60, 0.3);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
   }
 
   .blog-title, .blog-description {
@@ -32,17 +31,17 @@
   }
 
   h2.blog-post-title a {
-  	color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
   }
 
   h2.blog-post-title a:hover {
-  	color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
   }
 
   h1, h2, h3, h4, h5, h6, p, a, .blog-nav-item, .blog-post-title {
-  	color: inherit;
+    color: inherit;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
   }
@@ -100,46 +99,25 @@
 
   /* Posts */
 
-  .blog-main {
+  .blog-main{
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(100, 100, 100, 0.1);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
   }
 
   .blog-post-meta {
-  	color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .blog-footer {
     color: rgba(255, 255, 255, 0.9);
-  	background-color: rgba(100, 100, 100, 0.1);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(100, 100, 100, 0.1);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
   }
 
-  /* Archives */
 
-  .archives-loop-li {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .archives-loop-li:hover {
-    text-decoration: none;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .archives-tags {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .archives-tags:hover {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
 
   /* Misc */
 
@@ -154,26 +132,22 @@
     border: none;
     border-radius: 3px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
     transition: all 0.2s;
   }
-
   .form-control:focus {
     border-color: rgba(255, 255, 255, 0);
     outline: 0;
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
   }
-
   .form-control::-moz-placeholder {
     color: rgba(255, 255, 255, 0.5);
     opacity: 1;
   }
-
   .form-control:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
   }
-
   .form-control::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
   }
@@ -255,5 +229,85 @@
 
   .btn-rounded {
     border-radius: 50px;
+  }
+
+
+
+  /* Safari Blur */
+  @supports (-webkit-backdrop-filter: none){
+      .blog-masthead {
+        background-color: rgba(60, 60, 60, 0.3);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      
+      .blog-footer {
+        -webkit-backdrop-filter: blur(20px);
+      }
+
+      .blog-main {
+        -webkit-backdrop-filter: blur(20px);
+      }
+  }
+
+  /* Other Blur */
+  @supports not (-webkit-backdrop-filter: none){
+
+    /* head */
+    .blog-masthead::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-filter: blur(20px);
+      -moz-filter: blur(20px);
+      -ms-filter: blur(20px);
+      -o-filter: blur(20px);
+      filter: blur(20px);
+      z-index: -1;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* body */
+    .blog-main::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-filter: blur(20px);
+      -moz-filter: blur(20px);
+      -ms-filter: blur(20px);
+      -o-filter: blur(20px);
+      filter: blur(20px);
+      z-index: -1;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      margin:-10px;
+    }
+
+    /* footer */
+    .blog-footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-filter: blur(20px);
+      -moz-filter: blur(20px);
+      -ms-filter: blur(20px);
+      -o-filter: blur(20px);
+      filter: blur(20px);
+      z-index: -1;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
   }
 }
