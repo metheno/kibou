@@ -24,7 +24,7 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 - Based on Bootstrap
 - Minimal (as in art, not in size) and simple
 - Fully responsive, good for smartphones
-- A transparent style designed for **Safari** **Chrome** **FireFox** users
+- A transparent style designed for **Safari**, and also compaticable for **Chrome** and **FireFox** users.
 - Highlight \<code\> tag with highlight.js
 - A simple [Tag Cloud page](http://test.metheno.net/tags.html)
 - DNS prefetch for faster loading speed
@@ -42,16 +42,14 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 
 If you wish to contribute to this theme, please fork this repository and send a pull request after change.
 
-Thank you for your help.
+### Contributors
 
-Contributer:
+Thank you for your help:
 
 - moriW : https://www.moridisa.cn	
-
 
 ## Links
 
 Demo: http://test.metheno.net/
 
 Author: https://www.metheno.net/
-
