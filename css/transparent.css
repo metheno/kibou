@@ -231,15 +231,19 @@
     border-radius: 50px;
   }
 
-
+  /* Archive */
+  .archives-loop-li, .archives-tags, archives-loop-li:hover, archives-tags:hover{
+    text-decoration: none;
+  }
 
   /* Safari Blur */
   @supports (-webkit-backdrop-filter: none){
+
       .blog-masthead {
         background-color: rgba(60, 60, 60, 0.3);
         -webkit-backdrop-filter: blur(20px);
       }
-      
+
       .blog-footer {
         -webkit-backdrop-filter: blur(20px);
       }
@@ -249,7 +253,7 @@
       }
   }
 
-  /* Other Blur */
+  /* Other Blur - by moriW */
   @supports not (-webkit-backdrop-filter: none){
 
     /* head */
