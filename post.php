@@ -14,7 +14,7 @@ $this->need('header.php'); ?>
       <?php $this->content(); ?>
 
     </div>
-    <p itemprop="keywords" style="padding-top:10px;"><?php _e('标签: '); ?><?php $this->tags(', ', true, '无'); ?></p>
+    <p itemprop="keywords" class="post-tag-holder" style="padding-top:10px;"><?php _e('标签: '); ?><?php $this->tags(', ', true, '无标签'); ?></p>
   </article><!-- /.blog-post -->
 
   <?php $this->need('comments.php'); ?>

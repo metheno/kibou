@@ -53,11 +53,8 @@ function hasScrolled() {
 }
 
 // Optimize comments.php
-
 $(document).ready(function(){
-  var replyBtnDisplay = $('#cancel-comment-reply-link').css('display');
-  $(".comment-list:first").removeClass("comment-list").addClass('media-list');
-  if(replyBtnDisplay == 'none'){
-    $("#cancel-reply-btn").css('display', 'none');
-  };
+  $("#cancel-comment-reply-link").addClass("btn btn-transparent");
+  $(".media-body a").addClass("btn btn-xs btn-transparent");
+  $(".media-heading a").removeClass("btn btn-xs btn-transparent");
 });

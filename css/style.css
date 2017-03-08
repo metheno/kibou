@@ -491,7 +491,11 @@ h2.blog-post-title a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Comments */
+/* Comments
+ *
+ * Some styles come from my new theme Kami.
+ *
+ */
 
 .avatar {
   padding: 0;
@@ -499,12 +503,66 @@ h2.blog-post-title a:hover {
   height: 48px;
   max-width: 48px;
   max-height: 48px;
-  border: 1px solid rgba(80, 80, 80, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 100%;
 }
 
 .comment-meta {
   font-size: 12px;
+}
+
+.kami-comment-form {
+  position: relative;
+  margin: 40px 10px 0 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.kami-comment-form .kami-form-control {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  height: 34px;
+  font-family: inherit;
+  border: none;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0);
+  text-shadow: inherit;
+}
+
+.kami-comment-form .kami-form-control:focus {
+  outline: 0;
+}
+
+.kami-comment-form textarea.kami-form-control {
+  overflow: hidden;
+  height: 150px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  border: none;
+  border-radius: 0;
+  resize: none;
+}
+
+.kami-comment-form .kami-input-control {
+  float: left;
+  width: calc(99%/3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.kami-comment-form .btn {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+}
+
+.kami-comment-form #cancel-comment-reply-link {
+  position: absolute;
+  right: 100px;
+  bottom: 25px;
 }
 
 /* Friend Links */
@@ -523,6 +581,17 @@ h2.blog-post-title a:hover {
 }
 
 /* Misc */
+
+.post-tag-holder a {
+  display: inline-block;
+  margin-right: 3px;
+  padding: 0 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  text-decoration: none;
+}
 
 .shaky {
   display: inline-block;
@@ -974,6 +1043,10 @@ h2.blog-post-title a:hover {
   .blog-footer p span.shaky {
     font-size: 9px;
     line-height: 1;
+  }
+
+  .kami-comment-form .kami-input-control {
+    width: 100%;
   }
 
   .MathJax_Display {

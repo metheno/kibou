@@ -125,6 +125,10 @@
     color: rgba(255, 255, 255, 1);
   }
 
+  .avatar {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
   /* Input */
   .form-control {
     color: rgba(255, 255, 255, 1);
@@ -141,14 +145,14 @@
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
   }
-  .form-control::-moz-placeholder {
+  .form-control::-moz-placeholder, .kami-input-control::-moz-placeholder, textarea.kami-form-control::-moz-placeholder {
     color: rgba(255, 255, 255, 0.5);
     opacity: 1;
   }
-  .form-control:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, .kami-input-control::-ms-input-placeholder, textarea.kami-form-control::-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
   }
-  .form-control::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, .kami-input-control::-webkit-input-placeholder, textarea.kami-form-control::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
   }
 
