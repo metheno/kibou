@@ -15,6 +15,7 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 
 ![Kibou Header](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-white.png)
 ![Kibou Comment Form](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-new-comment-form.png)
+![Kibou Blogroll Page](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-blogroll.png)
 ![Kibou transparent Safari](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot.jpg)
 ![Kibou transparent Chrome](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot2.jpg)
 
@@ -35,6 +36,9 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 
 - A better style for comments.php
 - A page for blogroll
+
+### Possible features?
+
 - i18n support
 
 ## Contribute
@@ -47,7 +51,7 @@ If you wish to contribute to this theme, please fork this repository and send a 
 
 ## Links
 
-Demo: http://test.metheno.net/
+Demo: http://blog.metheno.net/
 
 Author: https://www.metheno.net/
 

@@ -567,6 +567,55 @@ h2.blog-post-title a:hover {
 
 /* Friend Links */
 
+.links {
+  overflow: hidden;
+  margin: 10px;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+.links li {
+  display: inline-block;
+  position: relative;
+  margin: 30px;
+  font-size: 20px;
+  width: 150px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: all .5s cubic-bezier(.3, 2.5, .5, 1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.links li img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 150px !important;
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.links li span {
+  display: block;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  background: #FEFDFF;
+  font-weight: 300;
+  text-align: center;
+  line-height: 2.5;
+  border-radius: 0 0 5px 5px;
+}
+
+.links li:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
 /* Browse Happy */
 
 .browsehappy {
@@ -926,8 +975,7 @@ h2.blog-post-title a:hover {
 }
 
 .navbar-fixed-top {
-  -webkit-transition: all cubic-bezier(.35,.98,.35,.98) .4s;
-  transition: all cubic-bezier(.35,.98,.35,.98) .4s;
+  transition: all cubic-bezier(.3,1,.5,1) 0.3s;
 }
 
 .nav-up {
@@ -1056,6 +1104,16 @@ h2.blog-post-title a:hover {
 
   .nav-up {
     top: -42px;
+  }
+
+  .links li {
+    margin: 15px;
+    font-size: 17px;
+    width: 120px;
+  }
+
+  .links li img {
+    height: 120px !important;
   }
 
 }
