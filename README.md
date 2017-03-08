@@ -13,9 +13,8 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 
 ## Screenshots
 
-![Kibou Header](https://im01.metheno.net/images/170212/kibou_index.png)
-![Kibou Post](https://im01.metheno.net/images/170212/kibou_post.png)
-![Kibou Footer](https://im01.metheno.net/images/170212/kibou_footer.png)
+![Kibou Header](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-white.png)
+![Kibou Comment Form](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-new-comment-form.png)
 ![Kibou transparent Safari](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot.jpg)
 ![Kibou transparent Chrome](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot2.jpg)
 
@@ -46,7 +45,7 @@ If you wish to contribute to this theme, please fork this repository and send a 
 
 Thank you for your help:
 
-- moriW : https://www.moridisa.cn	
+- moriW : https://www.moridisa.cn
 
 ## Links
 

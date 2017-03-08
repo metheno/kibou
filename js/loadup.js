@@ -57,4 +57,5 @@ $(document).ready(function(){
   $("#cancel-comment-reply-link").addClass("btn btn-transparent");
   $(".media-body a").addClass("btn btn-xs btn-transparent");
   $(".media-heading a").removeClass("btn btn-xs btn-transparent");
+  $(".comment-list:first").css("padding-left", "0")
 });
