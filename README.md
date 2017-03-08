@@ -23,19 +23,19 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 - Based on Bootstrap
 - Minimal (as in art, not in size) and simple
 - Fully responsive, good for smartphones
-- A transparent style designed for **Safari**, and also compaticable for **Chrome** and **FireFox** users.
-- Highlight \<code\> tag with highlight.js
+- A transparent style designed for **Safari**, and also compatible for **Chrome** and **FireFox** users (made avaliable by @moriW).
+- Automatically highlight \<code\> tag
 - A simple [Tag Cloud page](http://test.metheno.net/tags.html)
-- DNS prefetch for faster loading speed
-- Able to switch to serif font for more comfortable reading in English
+- DNS prefetch
+- Switch to serif font for more comfortable reading in English
 - MathJAX support for users who love math
 - Google Analysis support
 
 ### Coming up in future updates…
 
+- A better style for comments.php
 - A page for blogroll
 - i18n support
-- A better style for comments.php
 
 ## Contribute
 
@@ -43,12 +43,14 @@ If you wish to contribute to this theme, please fork this repository and send a 
 
 ### Contributors
 
-Thank you for your help:
-
-- moriW : https://www.moridisa.cn
+- moriW: https://www.moridisa.cn
 
 ## Links
 
 Demo: http://test.metheno.net/
 
 Author: https://www.metheno.net/
+
+## License
+
+The MIT License (MIT)
