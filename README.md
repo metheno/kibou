@@ -41,6 +41,21 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 
 - i18n support
 
+### Blogroll
+
+Currently, adding new link through markdown syntax is not supported. If you wish to add a new link, please use the following HTML.
+
+```html
+<ul class="links">
+  <li>
+    <a href="//some.link" target="_blank">
+      <img src="//path.to/avatar.png">
+      <span>Your Friend's Name</span>
+    </a>
+  </li>
+<ul>
+```
+
 ## Contribute
 
 If you wish to contribute to this theme, please fork this repository and send a pull request after change.
