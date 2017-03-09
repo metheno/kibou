@@ -507,8 +507,28 @@ h2.blog-post-title a:hover {
   border-radius: 100%;
 }
 
-.comment-meta {
-  font-size: 12px;
+.comments {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.comments a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.comments a:first-of-type {
+  margin-left: 0;
+}
+
+.comment-by-author a {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .kami-comment-form {

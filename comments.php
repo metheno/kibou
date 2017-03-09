@@ -2,53 +2,9 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
 <div id="comments">
-  <hr/>
-  <?php function threadedComments($comments, $options) {
-    $commentClass = '';
-      if ($comments->authorId) {
-        if ($comments->authorId == $comments->ownerId) {
-          $commentClass .= ' comment-by-author';
-        } else {
-          $commentClass .= ' comment-by-user';
-      }
-    }
-    $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
-  ?>
-    <li id="li-<?php $comments->theId(); ?>" class="media<?php
-      if ($comments->levels > 0) {
-          echo ' comment-child';
-          $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
-      } else {
-          echo ' comment-parent';
-      }
-      $comments->alt(' comment-odd', ' comment-even');
-      echo $commentClass;
-    ?>">
-    <div class="media-left">
-        <?php $comments->gravatar('50', ''); ?>
-    </div>
-    <div class="media-body">
-      <p class="media-heading"><strong><?php $comments->author(); ?></strong></p>
-      <span href="<?php $comments->permalink(); ?>" class="text-muted comment-meta"><?php $comments->date('Y-m-d H:i'); ?></span>
-      <?php $comments->content(); ?>
-      <?php $comments->reply(); ?>
-    </div>
-    <?php if ($comments->children) { ?>
-        <div class="comment-children">
-            <?php $comments->threadedComments($options); ?>
-        </div>
-    <?php } ?>
-    </li>
-  <?php } ?>
 
   <!-- Default -->
   <?php $this->comments()->to($comments); ?>
-
-  <?php if ($comments->have()): ?>
-    <h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
-    <?php $comments->listComments(); ?>
-    <?php $comments->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
-  <?php endif; ?>
 
   <?php if($this->allow('comment')): ?>
   <div id="<?php $this->respondId(); ?>" class="respond">
@@ -73,6 +29,50 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <div class="comments-content">
       <h2 id="response" class="mdui-text-color-theme"><?php _e('评论已关闭'); ?></h2>
     </div>
+  <?php endif; ?>
+
+
+
+  <?php function threadedComments($comments, $options) {
+    $commentClass = '';
+      if ($comments->authorId) {
+        if ($comments->authorId == $comments->ownerId) {
+          $commentClass .= ' comment-by-author';
+        } else {
+          $commentClass .= ' comment-by-user';
+      }
+    }
+    $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
+  ?>
+    <li id="li-<?php $comments->theId(); ?>" class="media<?php
+      if ($comments->levels > 0) {
+          echo ' comment-child';
+          $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
+      } else {
+          echo ' comment-parent';
+      }
+      $comments->alt(' comment-odd', ' comment-even');
+      echo $commentClass;
+    ?> comments">
+    <div class="media-left">
+        <?php $comments->gravatar('50', ''); ?>
+    </div>
+    <div class="media-body">
+      <p class="media-heading"><?php $comments->content(); ?></p>
+      <span class="text-muted comment-meta"><?php $comments->author(); ?><span style="font-size:13px"><?php $comments->date('Y-m-d H:i'); ?></span><?php $comments->reply(); ?></span>
+    </div>
+    <?php if ($comments->children) { ?>
+        <div class="comment-children">
+            <?php $comments->threadedComments($options); ?>
+        </div>
+    <?php } ?>
+    </li>
+  <?php } ?>
+
+  <?php if ($comments->have()): ?>
+    <h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h3>
+    <?php $comments->listComments(); ?>
+    <?php $comments->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
   <?php endif; ?>
 
 </div>
