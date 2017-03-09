@@ -240,6 +240,27 @@
     text-decoration: none;
   }
 
+  /* Blogroll */
+
+  .links li {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .links li span, .links a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+  }
+
+  .links li:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .links a:hover {
+    text-decoration: none;
+  }
+
   /* Safari Blur */
   @supports (-webkit-backdrop-filter: none){
 
