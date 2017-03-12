@@ -19,7 +19,7 @@ class UACheck {
 
   public static function isSafari() {
     if (stripos($_SERVER['HTTP_USER_AGENT'], 'Safari') && !stripos($_SERVER['HTTP_USER_AGENT'], 'Chrome')) {
-        return true;
+      return true;
     }
   }
 }
