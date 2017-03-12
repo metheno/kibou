@@ -1,25 +1,29 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<?php if ($this->options->enableTransparent == 1): ?>
+<?php if (($this->options->enableTransparent == 1) and (UACheck::isSafari() == true)): ?>
   <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
   <style>
-    @supports (-webkit-backdrop-filter: none) or (-webkit-filter: blur(20px)) or (-ms-filter: blur(20px)) or (-o-filter: blur(20px)) or (filter: blur(20px)) {
+    @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
       body {
         background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
         background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
       }
+    }
+  </style>
+<?php endif; ?>
 
-      @supports not (-webkit-backdrop-filter: none){
-        .blog-masthead::before {
-          background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
-        }
-        .blog-main::before {
-          background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
-        }
-        .blog-footer::before {
-          background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
-        }
-      }
+<?php if (($this->options->themeColor) and (UACheck::isSafari() == false)): ?>
+  <style>
+    a, a:hover, a:active,
+    .pagination > .active > a,.pagination > .active > a:focus,.pagination > .active > a:hover,
+    .pagination > .active > span,.pagination > .active > span:focus,.pagination > .active > span:hover,
+    .pagination > li > a, .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span,
+    h2.blog-post-title a {
+      color: <?php $this->options->themeColor(); ?>;
+      border-color: <?php $this->options->themeColor(); ?>;
+    }
+    .blog-masthead {
+      background-color: <?php $this->options->themeColor(); ?>;
     }
   </style>
 <?php endif; ?>

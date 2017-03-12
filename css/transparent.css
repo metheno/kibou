@@ -7,7 +7,7 @@
  * Description:
  */
 
-@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) or (-webkit-filter: blur(20px)) or (-ms-filter: blur(20px)) or (-o-filter: blur(20px)) or (filter: blur(20px))  {
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))  {
 
   body {
     color: rgba(255, 255, 255, 0.9);
@@ -17,6 +17,9 @@
 
   .blog-masthead {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(60, 60, 60, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     overflow: hidden;
   }
 
@@ -103,6 +106,8 @@
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(100, 100, 100, 0.1);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     overflow: hidden;
   }
 
@@ -114,10 +119,10 @@
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(100, 100, 100, 0.1);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     overflow: hidden;
   }
-
-
 
   /* Misc */
 
@@ -257,85 +262,4 @@
     text-decoration: none;
   }
 
-  /* Safari Blur */
-  @supports (-webkit-backdrop-filter: none){
-
-      .blog-masthead {
-        background-color: rgba(60, 60, 60, 0.3);
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px);
-      }
-
-      .blog-footer {
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px);
-      }
-
-      .blog-main {
-        -webkit-backdrop-filter: blur(20px);
-        backdrop-filter: blur(20px);
-      }
-  }
-
-  /* Other Blur - by moriW */
-  @supports not (-webkit-backdrop-filter: none){
-
-    /* head */
-    .blog-masthead::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      -webkit-filter: blur(20px);
-      -moz-filter: blur(20px);
-      -ms-filter: blur(20px);
-      -o-filter: blur(20px);
-      filter: blur(20px);
-      z-index: -1;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-
-    /* body */
-    .blog-main::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      -webkit-filter: blur(20px);
-      -moz-filter: blur(20px);
-      -ms-filter: blur(20px);
-      -o-filter: blur(20px);
-      filter: blur(20px);
-      z-index: -1;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      margin:-10px;
-    }
-
-    /* footer */
-    .blog-footer::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      -webkit-filter: blur(20px);
-      -moz-filter: blur(20px);
-      -ms-filter: blur(20px);
-      -o-filter: blur(20px);
-      filter: blur(20px);
-      z-index: -1;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-  }
 }

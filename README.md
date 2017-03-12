@@ -16,34 +16,35 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 ![Kibou Header](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-white.png)
 ![Kibou Comment Form](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-new-comment-form.png)
 ![Kibou Blogroll Page](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-blogroll.png)
-![Kibou transparent Safari](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot.jpg)
-![Kibou transparent Chrome](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot2.jpg)
+![Kibou Frosted Glass Safari](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot.jpg)
+![Kibou Frosted Glass Chrome](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot2.jpg)
 
 ## Features
 
 - Based on Bootstrap
 - Minimal (as in art, not in size) and simple
 - Fully responsive, good for smartphones
-- A transparent style designed for **Safari**, and also compatible for **Chrome** and **FireFox** users (made avaliable by @moriW).
+- A frosted glass style designed for **Safari**\* (See below for details).
 - Automatically highlight \<code\> tag
-- A simple [Tag Cloud page](http://test.metheno.net/tags.html)
+- A simple [Tag Cloud page](https://blog.metheno.net/archives.html)
+- A simple [blogroll page](https://blog.metheno.net/py.html)
 - DNS prefetch
 - Switch to serif font for more comfortable reading in English
-- MathJAX support for users who love math
+- MathJAX support
 - Google Analysis support
 
 ### Coming up in future updates…
 
 - A better style for comments.php
-- A page for blogroll
+- Bug fixes on content rendering
 
-### Possible features?
+### Possible features in the future
 
 - i18n support
 
 ### Blogroll
 
-Currently, adding new link through markdown syntax is not supported. If you wish to add a new link, please use the following HTML.
+Currently, adding new blogroll link through markdown syntax is not supported. If you wish to add a new link, please use the following HTML format.
 
 ```html
 <ul class="links">
@@ -55,6 +56,16 @@ Currently, adding new link through markdown syntax is not supported. If you wish
   </li>
 <ul>
 ```
+
+### Frosted Glass Effect
+
+The frosted glass effect can be enabled for Safari users only.
+
+The effect was made compatible for **Chrome** and **Firefox** users by @moriW. I appreciate his work.
+
+However, this effect is **no longer supported** by theme Kibou, due to many reports of glitches and malfunctions. This effect seems to cause some browsers, including Chrome and certain Chinese Browsers, to slow down and may even crash on certain PCs.
+
+The effect is still available in the [frosted-glass branch](https://github.com/metheno/typecho-theme-kibou/tree/frosted-glass), but the theme is at an older version, and will not be supported in future releases.
 
 ## Contribute
 

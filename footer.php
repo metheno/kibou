@@ -42,7 +42,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
     <?php if ($this->options->enableMathJax == 1): ?>
       <!-- MathJax Supports -->
-      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           extensions: ["tex2jax.js"],

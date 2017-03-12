@@ -10,12 +10,14 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * Description:
  */
 
+require_once("lib/UACheck.php");
+
 function themeConfig($form) {
 
   $enableTransparent = new Typecho_Widget_Helper_Form_Element_Radio('enableTransparent',
     array('1' => _t('开启'),
     '0' => _t('关闭')),
-    '0', _t('毛玻璃特效 (Beta)'), _t('默认为关闭。<br/>现已支持 Chrome 和 Firefox 浏览器。'));
+    '0', _t('毛玻璃特效 (Beta)'), _t('默认为关闭。<br/>仅支持 Safari 浏览器。'));
   $form->addInput($enableTransparent);
 
   $enableTransparentBg = new Typecho_Widget_Helper_Form_Element_Text('enableTransparentBg', NULL, NULL,
@@ -23,8 +25,12 @@ function themeConfig($form) {
   $form->addInput($enableTransparentBg);
 
   $enableTransparentBgPosition = new Typecho_Widget_Helper_Form_Element_Text('enableTransparentBgPosition', NULL, NULL,
-  _t('毛玻璃特效 背景图位置'), _t('为 <code>body</code> 添加一个 <code>background-position</code>。例如：<code>right</code>。<br/>该设置仅在 <b>毛玻璃特效</b> <b style="color:red;">开启</b> 时生效。'));
+  _t('毛玻璃特效 背景图位置'), _t('添加一个 <code>background-position</code>。例如：<code>right</code>。<br/>该设置仅在 <b>毛玻璃特效</b> <b style="color:red;">开启</b> 时生效。'));
   $form->addInput($enableTransparentBgPosition);
+
+  $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL,
+  _t('主题颜色'), _t('设置主题色。对于 Safari，该设置仅在 <b>毛玻璃特效</b> <b style="color:red;">关闭</b> 时生效。<br/>提示：请不要忘记这里其实也能使用 <code>rgba()</code>。'));
+  $form->addInput($themeColor);
 
   $enableSerifFont = new Typecho_Widget_Helper_Form_Element_Radio('enableSerifFont',
     array('1' => _t('开启'),
