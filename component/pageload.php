@@ -1,6 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<?php if (($this->options->enableTransparent == 1) and (UACheck::isSafari() == true)): ?>
+<?php if (($this->options->enableTransparent == 1) && (UACheck::isSafari() == true)): ?>
+  <?php if ((UACheck::isMobile() == false)): ?>
   <link href="<?php $this->options->themeUrl('css/transparent.css'); ?>" rel="stylesheet">
   <style>
     @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
@@ -10,6 +11,7 @@
       }
     }
   </style>
+  <?php endif; ?>
 <?php endif; ?>
 
 <?php if (($this->options->themeColor) and (UACheck::isSafari() == false)): ?>
