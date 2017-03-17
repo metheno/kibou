@@ -10,6 +10,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * Description:
  */
 
+require_once("lib/PluginCheck.php");
 require_once("lib/UACheck.php");
 
 function themeConfig($form) {
@@ -55,11 +56,7 @@ function themeConfig($form) {
   $form->addInput($dnsPrefetch_Add);
 
   $analyticsGoogle = new Typecho_Widget_Helper_Form_Element_Textarea('analyticsGoogle', NULL, NULL,
-  _t('Google Analytics 代码'), _t('填写你的 Google Analytics 代码。不需要加 <code>script</code> 标签。'));
+  _t('Google Analytics 代码'), _t('填写你的 Google Analytics 代码。不需要加 <code>script</code> 标签。'));
   $form->addInput($analyticsGoogle);
 
-  /*
-  $faviconUrl = new Typecho_Widget_Helper_Form_Element_Text('faviconUrl', NULL, NULL, _t('站点 favicon.ico URL'), _t('在这里填入一个 .ico 图标的 URL 地址。'));
-  $form->addInput($faviconUrl);
-  */
 }

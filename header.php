@@ -17,7 +17,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="<?php $this->options->description(); ?>">
     <meta name="author" content="<?php $this->author(); ?>">
     <!-- The above meta tags must be at top. -->
 

@@ -26,17 +26,18 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 - Fully responsive, good for smartphones
 - A frosted glass style designed for **Safari**\* (See below for details).
 - Automatically highlight \<code\> tag
-- A simple [Tag Cloud page](https://blog.metheno.net/archives.html)
+- A simple [tag cloud page](https://blog.metheno.net/archives.html)
 - A simple [blogroll page](https://blog.metheno.net/py.html)
 - DNS prefetch
 - Switch to serif font for more comfortable reading in English
 - MathJAX support
 - Google Analysis support
+- Plugins: style optimization
 
 ### Coming up in future updates…
 
-- A better style for comments.php
-- Bug fixes on content rendering
+- **PJAX Support**
+- Duoshuo Support
 
 ### Possible features in the future
 
@@ -66,6 +67,13 @@ The effect was made compatible for **Chrome** and **Firefox** users by @moriW. I
 However, this effect is **no longer supported** by theme Kibou, due to many reports of glitches and malfunctions. This effect seems to cause some browsers, including Chrome and certain Chinese Browsers, to slow down and may even crash on certain PCs.
 
 The effect is still available in the [frosted-glass branch](https://github.com/metheno/typecho-theme-kibou/tree/frosted-glass), but the theme is at an older version, and will not be supported in future releases.
+
+### Plugin style optimization
+
+The theme is now optimized for the following plugins:
+
+- [APlayer](https://github.com/DIYgod/APlayer/) support - Plugin style optimization
+- [DPlayer](https://github.com/DIYgod/DPlayer/) support - style optimization
 
 ## Contribute
 

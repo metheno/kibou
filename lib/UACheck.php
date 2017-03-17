@@ -2,7 +2,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 /**
- * Device.php
+ * UACheck.php
  * Author     : metheno
  * Date       : 2017/03/12
  * Version    :

@@ -14,7 +14,7 @@
   <?php endif; ?>
 <?php endif; ?>
 
-<?php if (($this->options->themeColor) and (UACheck::isSafari() == false)): ?>
+<?php if (($this->options->themeColor) && (UACheck::isSafari() == false)): ?>
   <style>
     a, a:hover, a:active,
     .pagination > .active > a,.pagination > .active > a:focus,.pagination > .active > a:hover,
@@ -43,5 +43,41 @@
     body {
       font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
     }
+  </style>
+<?php endif; ?>
+
+<?php if ((PluginCheck::aPlayerExists() == true) && (UACheck::isSafari() == true)): ?>
+  <style>
+    .aplayer-info {
+      color: rgba(80, 80, 80, 1);
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    .aplayer-list {
+      color: rgba(80, 80, 80, 1);
+      background-color: rgba(255, 255, 255, 1);
+    }
+  </style>
+<?php endif; ?>
+
+<?php if (PluginCheck::dPlayerExists() == true): ?>
+  <style>
+    .dplayer-video {
+      border-radius: 0;
+      margin: 0;
+    }
+    .dplayer-menu-label a:hover {
+      text-decoration: none;
+    }
+  <?php if (UACheck::isSafari() == true): ?>
+    .dplayer .dplayer-menu {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+    }
+    .dplayer-menu-label a, .dplayer-menu-label a:hover {
+      text-decoration: none;
+    }
+  <?php endif; ?>
   </style>
 <?php endif; ?>
