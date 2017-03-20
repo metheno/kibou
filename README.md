@@ -36,8 +36,9 @@ Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues
 
 ### Coming up in future updates…
 
-- **PJAX Support**
-- Duoshuo Support
+- **PJAX**
+- **Extended Markdown syntax**
+- Duoshuo support
 
 ### Possible features in the future
 
@@ -70,10 +71,20 @@ The effect is still available in the [frosted-glass branch](https://github.com/m
 
 ### Plugin style optimization
 
-The theme is now optimized for the following plugins:
+The theme is now optimized for or compatible with the following plugins:
 
-- [APlayer](https://github.com/DIYgod/APlayer/) support - Plugin style optimization
+- [APlayer](https://github.com/DIYgod/APlayer/) support - style optimization
 - [DPlayer](https://github.com/DIYgod/DPlayer/) support - style optimization
+- [TePostView](https://lixianhua.com/typecho_viewsnum_plugin.html) support - add compatibility
+
+## Known Issues
+
+The following issues are known:
+
+- Render with extended Markdown causes APlayer and DPlayer to work incorrectly.
+- Input areas work incorrectly on iOS devices.
+
+The reason why above issues exist is because that I'm too young.
 
 ## Contribute
 

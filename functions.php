@@ -11,6 +11,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  */
 
 require_once("lib/PluginCheck.php");
+require_once("lib/PostRenderer.php");
 require_once("lib/UACheck.php");
 
 function themeConfig($form) {

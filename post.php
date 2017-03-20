@@ -8,9 +8,11 @@ $this->need('header.php'); ?>
       <p class="blog-post-meta">
         <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>&nbsp;•
         <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('Y-m-d'); ?></time>&nbsp;•
+        <?php if (PluginCheck::tePostViewsExists() == true): _e('阅读: '); $this->viewsNum(); ?>&nbsp;•<?php endif; ?>
         <?php $this->category(', '); ?>
       </p>
 
+      <?php // echo PostRenderer::parse($this->content); ?>
       <?php $this->content(); ?>
 
     </div>

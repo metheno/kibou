@@ -36,6 +36,7 @@ $this->need('header.php'); ?>
       <?php endwhile; ?>
     </ol>
 
+    <?php // echo PostRenderer::parse($this->content); ?>
     <?php $this->content(); ?>
     <?php $this->need('comments.php'); ?>
 
