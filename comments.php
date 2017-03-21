@@ -25,10 +25,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       </form>
     </div>
   </div>
-  <?php else: ?>
-    <div class="comments-content">
-      <h2 id="response" class="mdui-text-color-theme"><?php _e('评论已关闭'); ?></h2>
-    </div>
   <?php endif; ?>
 
 
