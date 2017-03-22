@@ -2,7 +2,12 @@
 
 A minimal Typecho theme based on Bootstrap designed for a better reading experience.
 
-Feel free to send [issues](https://github.com/metheno/typecho-theme-kibou/issues).
+Feel free to send [issues in GitHub](https://github.com/metheno/typecho-theme-kibou/issues).
+
+You can also simply join the QQ group chat at 343313447.
+
+**The theme is tested on Typecho 1.0**
+
 
 ## Acknowledgements
 
