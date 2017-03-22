@@ -31,7 +31,7 @@ function themeConfig($form) {
   $form->addInput($enableTransparentBgPosition);
 
   $frostedGlassRGBA = new Typecho_Widget_Helper_Form_Element_Text('frostedGlassRGBA', NULL, NULL,
-  _t('background-filter 颜色'), _t('必须使用 <code>rgba()</code>'));
+  _t('backdrop-filter 颜色'), _t('必须使用 <code>rgba()</code>'));
   $form->addInput($frostedGlassRGBA);
 
   $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL,
