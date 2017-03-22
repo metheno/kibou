@@ -30,6 +30,10 @@ function themeConfig($form) {
   _t('毛玻璃特效 背景图位置'), _t('添加一个 <code>background-position</code>。例如：<code>right</code>。<br/>该设置仅在 <b>毛玻璃特效</b> <b style="color:red;">开启</b> 时生效。'));
   $form->addInput($enableTransparentBgPosition);
 
+  $frostedGlassRGBA = new Typecho_Widget_Helper_Form_Element_Text('frostedGlassRGBA', NULL, NULL,
+  _t('background-filter 颜色'), _t('必须使用 <code>rgba()</code>'));
+  $form->addInput($frostedGlassRGBA);
+
   $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL,
   _t('主题颜色'), _t('设置主题色。对于 Safari，该设置仅在 <b>毛玻璃特效</b> <b style="color:red;">关闭</b> 时生效。<br/>提示：请不要忘记这里其实也能使用 <code>rgba()</code>。'));
   $form->addInput($themeColor);

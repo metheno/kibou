@@ -9,18 +9,26 @@
         background-image: url('<?php if ($this->options->enableTransparentBg): $this->options->enableTransparentBg(); endif; ?>');
         background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
       }
+      <?php if ($this->options->frostedGlassRGBA): ?>
+      .blog-masthead {
+        background-color: <?php $this->options->frostedGlassRGBA(); ?>;
+      }
+      .blog-main {
+        background-color: <?php $this->options->frostedGlassRGBA(); ?>;
+      }
+      <?php endif; ?>
     }
   </style>
   <?php endif; ?>
 <?php endif; ?>
 
-<?php if (($this->options->themeColor) && (UACheck::isSafari() == false)): ?>
+<?php if (($this->options->themeColor) && ((UACheck::isSafari() == false) || (UACheck::isMobile() == true))): ?>
   <style>
     a, a:hover, a:active,
     .pagination > .active > a,.pagination > .active > a:focus,.pagination > .active > a:hover,
     .pagination > .active > span,.pagination > .active > span:focus,.pagination > .active > span:hover,
     .pagination > li > a, .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span,
-    h2.blog-post-title a {
+    .blog-title a, h2.blog-post-title a {
       color: <?php $this->options->themeColor(); ?>;
       border-color: <?php $this->options->themeColor(); ?>;
     }
