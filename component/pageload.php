@@ -10,16 +10,20 @@
         background-position: <?php if ($this->options->enableTransparentBgPosition): $this->options->enableTransparentBgPosition(); endif; ?>;
       }
       <?php if ($this->options->frostedGlassRGBA): ?>
-      .blog-masthead {
+      .blog-masthead, .blog-main {
         background-color: <?php $this->options->frostedGlassRGBA(); ?>;
       }
-      .blog-main {
-        background-color: <?php $this->options->frostedGlassRGBA(); ?>;
+      <?php endif; ?>
+      <?php if ($this->options->frostedGlassBlurAmount): ?>
+      .blog-masthead, .blog-main, .blog-footer {
+        -webkit-backdrop-filter: blur(<?php $this->options->frostedGlassBlurAmount(); ?>px);
+        backdrop-filter: blur(<?php $this->options->frostedGlassBlurAmount(); ?>);
       }
       <?php endif; ?>
     }
   </style>
   <?php endif; ?>
+
 <?php endif; ?>
 
 <?php if (($this->options->themeColor) && ((UACheck::isSafari() == false) || (UACheck::isMobile() == true))): ?>

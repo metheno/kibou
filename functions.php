@@ -34,6 +34,10 @@ function themeConfig($form) {
   _t('backdrop-filter 颜色'), _t('必须使用 <code>rgba()</code>'));
   $form->addInput($frostedGlassRGBA);
 
+  $frostedGlassBlurAmount = new Typecho_Widget_Helper_Form_Element_Text('frostedGlassBlurAmount', NULL, NULL,
+  _t('backdrop-filter blur 值'), _t('数值必须在 0 和 1 之间。'));
+  $form->addInput($frostedGlassBlurAmount);
+
   $themeColor = new Typecho_Widget_Helper_Form_Element_Text('themeColor', NULL, NULL,
   _t('主题颜色'), _t('设置主题色。对于 Safari，该设置仅在 <b>毛玻璃特效</b> <b style="color:red;">关闭</b> 时生效。<br/>提示：请不要忘记这里其实也能使用 <code>rgba()</code>。'));
   $form->addInput($themeColor);
