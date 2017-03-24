@@ -19,19 +19,11 @@ $this->need('header.php'); ?>
     <p itemprop="keywords" class="post-tag-holder" style="padding-top:10px;"><?php _e('标签: '); ?><?php $this->tags(', ', true, '无标签'); ?></p>
   </article><!-- /.blog-post -->
 
+  <ul class="article-switch">
+    <li class="prev"><?php $this->thePrev('%s','<span>没有更多了</span>'); ?></li>
+    <li class="next"><?php $this->theNext('%s','<span>没有更多了</span>'); ?></li>
+  </ul>
+
   <?php $this->need('comments.php'); ?>
-
-  <nav aria-label="Page navigation">
-    <ul class="pagination">
-      <li><?php $this->thePrev('%s','<span>没有更多了</span>'); ?></li>
-      <li><?php $this->theNext('%s','<span>没有更多了</span>'); ?> </li>
-    </ul>
-  </nav><!-- /.pagination -->
-
-<style>
-  .pagination {
-    font-size: 13px;
-  }
-</style>
 
 <?php $this->need('footer.php'); ?>

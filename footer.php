@@ -3,11 +3,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
             <?php if(!$this->is('post') && !$this->is('page')): ?>
               <center class="center-padding">
-                <form class="form-inline" id="search" method="post" action="./" role="search">
-                  <div class="form-group">
-                    <input type="text" name="s" class="form-control" placeholder="<?php _e( '输入关键字搜索'); ?>" onchange="this.value = aSpace(this.value);">
-                  </div>
-                  <button type="submit" class="btn btn-transparent"><?php _e( '搜索'); ?></button>
+                <form id="search" method="post" action="./" role="search">
+                  <input type="text" class="text" name="s" placeholder="<?php _e("搜索"); ?>">
                 </form>
               </center><!-- ./search -->
             <?php endif; ?>

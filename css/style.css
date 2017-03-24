@@ -164,6 +164,54 @@ nav {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.article-switch {
+  cursor: default;
+  padding-left: 0;
+  margin-top: 30px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.article-switch li {
+  display: inline-block;
+  width: 49.3%;
+  transition: all 0.2s;
+}
+
+.article-switch > li > a, .article-switch > li > span {
+  display: block;
+  position: relative;
+  padding: 7px 13px;
+  font-size: 13px;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.article-switch > li.prev {
+  text-align: left;
+}
+
+.article-switch > li.prev > a:before {
+  content: '上一篇 ';
+  opacity: 0.5;
+}
+
+.article-switch > li.next {
+  text-align: right;
+}
+
+.article-switch > li.next > a:after {
+  content: ' 下一篇';
+  opacity: 0.5;
+}
+
+.article-switch > li:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Buttons */
 
 .center-padding {
@@ -559,11 +607,12 @@ h2.blog-post-title a:hover {
 
 .kami-comment-form {
   position: relative;
+  width: 100%;
   margin: 40px 10px 0 0;
   padding: 10px 20px;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .kami-comment-form .kami-form-control {
