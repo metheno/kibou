@@ -4,7 +4,7 @@
  *
  * @package Kibou
  * @author metheno
- * @version 0.1.7
+ * @version 0.1.6
  * @link http://www.metheno.net
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
@@ -30,7 +30,7 @@ $this->need('header.php'); ?>
   <hr/>
 
   <center>
-    <?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'pagination', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
+    <?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'page-change', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
   </center>
 
 <?php $this->need('footer.php'); ?>

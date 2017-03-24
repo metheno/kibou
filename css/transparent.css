@@ -1,7 +1,7 @@
 /**
  * transparent.css
  *
- * Author     : metheno Mori
+ * Author     : metheno
  * Date       : 2017/02/28
  * Version    :
  * Description:
@@ -65,39 +65,8 @@
 
   /* Pagination */
 
-  .pagination {
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    margin: 20px 0 0 0;
-    -webkit-user-select: none;
-  }
-
-  .pagination > li > a, .pagination > li > span {
-    color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus,
-  .pagination > li > span:hover {
-      color: rgba(255, 255, 255, 0.9);
-      background-color: rgba(255, 255, 255, 0);
-      text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
-      border-color: rgba(255, 255, 255, 0);
-  }
-
-  .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover,
-  .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-      background-color: rgba(255, 255, 255, 0);
-      text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
-  }
-
-  .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover,
-  .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
-      cursor: not-allowed;
-      color: rgba(255, 255, 255, 0.4);
-      background-color: rgba(255, 255, 255, 0);
-      text-shadow: none;
-      border-color: #ddd
+  .page-change > li > a, .page-change > li > span, .page-change > li > a:hover, .page-change > li > span:hover {
+    text-decoration: none;
   }
 
   /* Posts */
