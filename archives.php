@@ -29,10 +29,10 @@ $this->need('header.php'); ?>
 
     <ol class="archives-loop-ol">
       <?php
-        $this->widget('Widget_Contents_Post_Recent', 'pageSize=10')->to($archives);
+        $this->widget('Widget_Contents_Post_Recent', 'pageSize=1000')->to($archives);
         while($archives->next()):
       ?>
-      <a class="archives-loop-li" href="<?php $archives->permalink() ?>"><li itemprop="name headline"><span class="text-muted"><?php $archives->date('Y-m-d'); ?></span>  <?php $archives->title() ?></li></a>
+      <a class="archives-loop-li" href="<?php $archives->permalink() ?>"><li itemprop="name headline"><span class="text-muted" style="padding-right:5px"><?php $archives->date('Y-m-d'); ?></span><?php $archives->title() ?></li></a>
       <?php endwhile; ?>
     </ol>
 
