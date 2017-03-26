@@ -45,12 +45,12 @@ function themeConfig($form) {
   $beianNumber = new Typecho_Widget_Helper_Form_Element_Text('beianNumber', NULL, NULL,
   _t('备案号'), _t('如果已经备案，请填写备案号。'));
   $form->addInput($beianNumber);
-  
+
   $neteaseCommentsProductKey = new Typecho_Widget_Helper_Form_Element_Text('neteaseCommentsProductKey', NULL, NULL,
   _t('网易云跟帖 productKey'), _t('请在跟贴 WEB 代码中获取该 productKey。'));
   $form->addInput($neteaseCommentsProductKey);
 
-  $neteaseCommentsTieLoader = new Typecho_Widget_Helper_Form_Element_Text('neteaseCommentsProductKey', NULL, NULL,
+  $neteaseCommentsTieLoader = new Typecho_Widget_Helper_Form_Element_Text('neteaseCommentsTieLoader', NULL, NULL,
   _t('网易云跟帖 Tie.loader'), _t('请在跟贴 WEB 代码中获取该 Tie.loader 值。'));
   $form->addInput($neteaseCommentsTieLoader);
 
