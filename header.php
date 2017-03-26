@@ -33,7 +33,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
     <!-- Styles for Theme Kibou -->
     <link href="<?php $this->options->themeUrl('css/normalize.css'); ?>" rel="stylesheet">
-    <link href="<?php $this->options->themeUrl('css/css/style-1490494010.css'); ?>" rel="stylesheet">
+    <link href="<?php $this->options->themeUrl('css/style-1490494010.css'); ?>" rel="stylesheet">
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
     <?php $this->need('component/pageload.php'); ?>
