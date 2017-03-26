@@ -1,24 +1,51 @@
-@supports (-webkit-backdrop-filter: none) {
+/**
+ * transparent.css
+ *
+ * Author     : metheno
+ * Date       : 2017/02/28
+ * Version    :
+ * Description:
+ */
+
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))  {
 
   body {
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(244, 244, 244, 0.8) url(https://im01.metheno.net/blog/Scenery_3.jpg) no-repeat fixed bottom;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .blog-masthead {
-  	background-color: rgba(60, 60, 60, 0.3);
-    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
-    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(60, 60, 60, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
   }
 
   .blog-title, .blog-description {
-    color: inherit;
+    color: rgba(255, 255, 255, 0.9);
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   }
 
-  h1, h2, h3, h4, h5, h6, p, a, .blog-nav-item, .blog-post-title {
-  	color: inherit;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  .blog-title a, .blog-title a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+
+  h2.blog-post-title a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+  }
+
+  h2.blog-post-title a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, .blog-nav-item, .blog-post-title {
+    color: inherit;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
   }
 
@@ -32,22 +59,182 @@
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
   }
 
+  article {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Pagination */
+
+  .page-change > li > a, .page-change > li > span, .page-change > li > a:hover, .page-change > li > span:hover {
+    text-decoration: none;
+  }
+
+  /* Posts */
+
   .blog-main {
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(100, 100, 100, 0.1);
-    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
-    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
   }
 
   .blog-post-meta {
-  	color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .blog-footer {
     color: rgba(255, 255, 255, 0.9);
-  	background-color: rgba(100, 100, 100, 0.1);
-    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.5);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+
+  /* Misc */
+
+  .text-muted {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .avatar {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /* Input */
+  .form-control {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: all 0.2s;
+  }
+  .form-control:focus {
+    border-color: rgba(255, 255, 255, 0);
+    outline: 0;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+  }
+  .form-control::-moz-placeholder, .kami-input-control::-moz-placeholder, textarea.kami-form-control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+  }
+  .form-control:-ms-input-placeholder, .kami-input-control::-ms-input-placeholder, textarea.kami-form-control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .form-control::-webkit-input-placeholder, .kami-input-control::-webkit-input-placeholder, textarea.kami-form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Button */
+
+  .btn-theme {
+    padding: 13px 50px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-theme:focus, .btn-theme.focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-theme:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-theme:active, .btn-theme.active, .open > .dropdown-toggle.btn-theme {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-theme:active:hover, .btn-theme.active:hover, .open > .dropdown-toggle.btn-theme:hover,
+  .btn-theme:active:focus, .btn-theme.active:focus, .open > .dropdown-toggle.btn-theme:focus,
+  .btn-theme:active.focus, .btn-theme.active.focus, .open > .dropdown-toggle.btn-theme.focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-theme:active, .btn-theme.active, .open > .dropdown-toggle.btn-theme {
+    background-image: none;
+  }
+
+  .btn-transparent {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-transparent:focus, .btn-transparent.focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-transparent:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-transparent:active, .btn-transparent.active, .open > .dropdown-toggle.btn-transparent {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-transparent:active:hover, .btn-transparent.active:hover, .open > .dropdown-toggle.btn-transparent:hover,
+  .btn-transparent:active:focus, .btn-transparent.active:focus, .open > .dropdown-toggle.btn-transparent:focus,
+  .btn-transparent:active.focus, .btn-transparent.active.focus, .open > .dropdown-toggle.btn-transparent.focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-transparent:active, .btn-transparent.active, .open > .dropdown-toggle.btn-transparent {
+    background-image: none;
+  }
+
+  .btn-rounded {
+    border-radius: 50px;
+  }
+
+  /* Archive */
+  .archives-loop-li, .archives-tags, archives-loop-li:hover, archives-tags:hover{
+    text-decoration: none;
+  }
+
+  /* Blogroll */
+
+  .links li {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .links li span, .links a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    text-decoration: none;
+  }
+
+  /* Form */
+
+  form .text, form .submit {
+    color: rgba(255, 255, 255, 1);
   }
 
 }
