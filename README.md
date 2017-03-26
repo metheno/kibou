@@ -21,8 +21,7 @@ You can also simply join the QQ group chat at 343313447.
 ![Kibou Header](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-white.png)
 ![Kibou Comment Form](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-new-comment-form.png)
 ![Kibou Blogroll Page](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-blogroll.png)
-![Kibou Frosted Glass Safari](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot.jpg)
-![Kibou Frosted Glass Chrome](https://raw.githubusercontent.com/moriW/moriWorkFlow/master/screenshot2.jpg)
+![Kibou Frosted Glass](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/kibou-transparent.png)
 
 ## Features
 
