@@ -16,7 +16,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
     <center>
       <footer class="blog-footer">
-        <p>&copy; Copyright <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a></p>
+        <p>
+          &copy; Copyright <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>">
+          <?php $this->options->title(); ?></a><?php if ($this->options->beianNumber): echo ' | '; $this->options->beianNumber(); endif; ?>
+        </p>
         <p>Theme <a style="cursor:default;">Kibou</a> made with <span class="shaky">(｡･∀･)ﾉﾞ♥</span></p>
       </footer>
     </center>

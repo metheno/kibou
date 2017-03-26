@@ -46,7 +46,7 @@ hr {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   cursor: default;
-  font-family:inherit;
+  font-family: inherit;
   padding-top: 8px;
   color: rgba(51, 51, 51, 1);
   font-weight: 400;

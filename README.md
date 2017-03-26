@@ -37,13 +37,13 @@ You can also simply join the QQ group chat at 343313447.
 - Switch to serif font for more comfortable reading in English
 - MathJAX support
 - Google Analysis support
+- [NetEase Comments](https://gentie.163.com/) support
 - Plugins: style optimization
 
 ### Coming up in future updates…
 
 - **PJAX**
 - **Extended Markdown syntax**
-- Duoshuo support
 
 ### Possible features in the future
 
