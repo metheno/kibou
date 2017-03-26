@@ -233,7 +233,7 @@
 
   /* Form */
 
-  form .text, form .submit {
+  form .text, form .submit, .kami-comment-form .kami-form-control {
     color: rgba(255, 255, 255, 1);
   }
 
