@@ -4,11 +4,7 @@
  *
  * @package Kibou
  * @author metheno
-<<<<<<< HEAD
  * @version 0.2.1
-=======
- * @version 0.2
->>>>>>> origin/master
  * @link http://www.metheno.net
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
