@@ -33,7 +33,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
     <!-- Styles for Theme Kibou -->
     <link href="<?php $this->options->themeUrl('css/normalize.css'); ?>" rel="stylesheet">
+<<<<<<< HEAD
     <link href="<?php $this->options->themeUrl('css/css/style-1490494010.css'); ?>" rel="stylesheet">
+=======
+    <link href="<?php $this->options->themeUrl('css/style.css'); ?>" rel="stylesheet">
+>>>>>>> origin/master
     <link href="<?php $this->options->themeUrl('css/highlight.css'); ?>" rel="stylesheet">
 
     <?php $this->need('component/pageload.php'); ?>
@@ -53,7 +57,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <![endif]-->
 
     <div class="blog-masthead navbar-fixed-top">
+<<<<<<< HEAD
       <div class="nav-container">
+=======
+      <div class="container">
+>>>>>>> origin/master
         <nav class="blog-nav">
           <a class="blog-nav-item <?php if($this->is('index')): echo "active"; endif; ?>" href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>
           <?php if($this->is('post')): ?>
@@ -71,7 +79,11 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     </div>
 
 
+<<<<<<< HEAD
     <div class="blog-container">
+=======
+    <div class="container blog-container">
+>>>>>>> origin/master
 
       <!-- Header -->
       <div class="blog-header">
@@ -92,5 +104,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
         </p>
       </div>
 
+<<<<<<< HEAD
       <div class="blog-row">
         <div class="blog-main">
+=======
+      <div class="row">
+        <div class="col-md-12 blog-main">
+>>>>>>> origin/master
