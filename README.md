@@ -107,3 +107,9 @@ Author: https://www.metheno.net/
 ## License
 
 The MIT License (MIT)
+
+## Donations
+
+Donate via WeChat.
+
+![WeChat QR Code](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/WeChatPay.jpg)
