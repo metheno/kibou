@@ -146,10 +146,18 @@ blockquote {
   border-left: 5px solid rgba(238, 238, 238, 0.5);
 }
 
+code, pre {
+    font-family: 'SF Mono', Menlo, Courier New, sans-serif;
+}
+
 code {
-  font-size: 13px;
-  font-family: Consolas, Menlo, Monaco, "Courier New", sans-serif;
-  margin: 3px;
+  padding: 3px 5px 2px 5px;
+  margin: 5px;
+  color: rgba(180, 25, 72, 1);
+  background-color: rgba(244, 244, 244, 0.8);
+  border-radius: 3px;
+  text-shadow: none;
+  font-size: 12px;
 }
 
 pre {
