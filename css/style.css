@@ -179,6 +179,7 @@ pre {
 
 pre > code {
   white-space: pre;
+  background-color: transparent;
 }
 
 sub,
