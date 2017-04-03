@@ -108,6 +108,8 @@ The MIT License (MIT)
 
 ## Donations
 
+<a href='https://pledgie.com/campaigns/33629'><img alt='Click here to lend your support to: typecho-theme-kibou and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/33629.png?skin_name=chrome' border='0' ></a>
+
 Donate via WeChat.
 
 ![WeChat QR Code](https://raw.githubusercontent.com/metheno/didactic-umbrella/master/typecho-theme-kibou/WeChatPay.jpg)
