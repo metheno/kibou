@@ -46,14 +46,14 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto Slab', serif;
+      font-family: 'Roboto Slab', 'Baskerville', serif;
     }
   </style>
 <?php else: ?>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,600italic,700italic,100,300,400,600,700" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
+      font-family: -apple-system ,'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
     }
   </style>
 <?php endif; ?>

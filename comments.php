@@ -29,7 +29,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       <span itemprop="image"><?php $comments->gravatar('100', ''); ?></span>
       <div class="comment-meta" style="font-size: 12px;">
         <cite class="fn" itemprop="name"><?php $comments->author(); ?></cite><br/>
-        <span itemprop="commentTime"><?php $comments->date('Y-m-d H:i'); ?></span>
+        <span itemprop="commentTime"><?php $comments->dateWord(); ?></span>
       </div>
     </div>
     <div class="comment-content" itemprop="commentText"><?php $comments->content(); ?></div>

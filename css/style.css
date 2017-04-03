@@ -262,7 +262,7 @@ video {
 
 .article-switch li {
   display: inline-block;
-  width: 49.3%;
+  width: 49%;
   transition: all 0.2s;
 }
 
@@ -1290,7 +1290,7 @@ h2.blog-post-title a:hover {
   }
 
   .blog-post-meta {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .blog-footer {
