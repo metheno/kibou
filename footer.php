@@ -18,7 +18,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       <footer class="blog-footer">
         <p>
           &copy; Copyright <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>">
-          <?php $this->options->title(); ?></a><?php if ($this->options->beianNumber): echo ' | '; $this->options->beianNumber(); endif; ?>
+          <?php $this->options->title(); ?></a>
+            <?php if($this->options->beianNumber) : echo ' | '; ?>
+                <a href="http://www.miibeian.gov.cn" rel="nofollow"><?php echo $this->options->beianNumber(); ?></a>
+            <?php endif; ?>
         </p>
         <p>Theme <a style="cursor:default;">Kibou</a> made with <span class="shaky">(｡･∀･)ﾉﾞ♥</span></p>
       </footer>
