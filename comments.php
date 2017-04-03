@@ -5,40 +5,43 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
   <!-- Default -->
   <?php function threadedComments($comments, $options) {
-      $commentClass = '';
-        if ($comments->authorId) {
-          if ($comments->authorId == $comments->ownerId) {
-            $commentClass .= ' comment-by-author';
-          } else {
-            $commentClass .= ' comment-by-user';
-        }
-      }
-      $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
-    ?>
-      <li id="li-<?php $comments->theId(); ?>" class="media<?php
-        if ($comments->levels > 0) {
-            echo ' comment-child';
-            $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
+    $commentClass = '';
+      if ($comments->authorId) {
+        if ($comments->authorId == $comments->ownerId) {
+          $commentClass .= ' comment-by-author';
         } else {
-            echo ' comment-parent';
-        }
-        $comments->alt(' comment-odd', ' comment-even');
-        echo $commentClass;
-      ?> comments">
-      <div class="media-left">
-          <?php $comments->gravatar('50', ''); ?>
+          $commentClass .= ' comment-by-user';
+      }
+    }
+    $commentLevelClass = $comments->levels > 0 ? ' comment-child' : ' comment-parent';
+  ?>
+    <li itemscope itemtype="http://schema.org/UserComments" id="comment-<?php $comments->theId(); ?>"  class="comment-body<?php
+      if ($comments->levels > 0) {
+        echo ' comment-child';
+        $comments->levelsAlt(' comment-level-odd', ' comment-level-even');
+      } else {
+        echo ' comment-parent';
+      }
+      $comments->alt(' comment-odd', ' comment-even');
+      echo $commentClass;
+    ?> comments">
+    <div class="comment-author" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="image"><?php $comments->gravatar('100', ''); ?></span>
+      <div class="comment-meta" style="font-size: 12px;">
+        <cite class="fn" itemprop="name"><?php $comments->author(); ?></cite><br/>
+        <span itemprop="commentTime"><?php $comments->date('Y-m-d H:i'); ?></span>
       </div>
-      <div class="media-body">
-        <p class="media-heading"><?php $comments->content(); ?></p>
-        <span class="text-muted comment-meta"><?php $comments->author(); ?><span style="font-size:13px"><?php $comments->date('Y-m-d H:i'); ?></span><?php $comments->reply(); ?></span>
-      </div>
-      <?php if ($comments->children) { ?>
-          <div class="comment-children">
-              <?php $comments->threadedComments($options); ?>
-          </div>
-      <?php } ?>
-      </li>
+    </div>
+    <div class="comment-content" itemprop="commentText"><?php $comments->content(); ?></div>
+    <div class="comment-reply"><?php $comments->reply(); ?></div>
+    <?php if ($comments->children) { ?>
+        <div class="comment-children">
+            <?php $comments->threadedComments($options); ?>
+        </div>
     <?php } ?>
+    </li>
+  <?php } ?>
+
   <?php $this->comments()->to($comments); ?>
 
   <?php if($this->allow('comment')): ?>
@@ -55,7 +58,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
             <?php else: ?>
               <input type="text" name="author" maxlength="12" id="author" class="kami-form-control kami-input-control" placeholder="<?php _e('称呼'); ?>" value="<?php $this->remember('author'); ?>" required>
               <input type="email" name="mail" id="mail" class="kami-form-control kami-input-control" placeholder="<?php _e('Email'); ?>" value="<?php $this->remember('mail'); ?>" <?php if ($this->options->commentsRequireMail): ?> required<?php endif; ?>>
-              <input type="url" name="url" id="url" class="kami-form-control kami-input-control" placeholder="<?php _e('网址'); ?>" <?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?>>
+              <input type="url" name="url" id="url" class="kami-form-control kami-input-control" placeholder="<?php _e('网址'); ?>" value="<?php $this->remember('url'); ?>" <?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?>>
             <?php endif; ?>
             <textarea name="text" id="textarea" class="kami-form-control" placeholder="<?php _e('请填写您的内容。'); ?>" required></textarea>
             <?php $comments->cancelReply(); ?>

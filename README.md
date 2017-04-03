@@ -8,7 +8,6 @@ You can also simply join the QQ group chat at 343313447.
 
 **The theme is tested on Typecho 1.0**
 
-
 ## Acknowledgements
 
 - [twbs/bootstrap](https://github.com/twbs/bootstrap)
@@ -86,7 +85,6 @@ The theme is now optimized for or compatible with the following plugins:
 The following issues are known:
 
 - Render with extended Markdown causes APlayer and DPlayer to work incorrectly.
-- Input areas work incorrectly on iOS devices.
 
 The reason why above issues exist is because that I'm too young.
 
