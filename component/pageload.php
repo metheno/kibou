@@ -50,10 +50,12 @@
     }
   </style>
 <?php else: ?>
+  <?php if ((UACheck::isMacOsX() == false) && (UACheck::isIOS() == false)): ?>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100italic,300italic,400italic,600italic,700italic,100,300,400,600,700" rel="stylesheet">
+  <?php endif; ?>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft Yahei", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-family: <?php if ((UACheck::isMacOsX() == true) || (UACheck::isIOS() == true)): echo '-apple-system, BlinkMacSystemFont, "Pingfang SC", '; endif; ?>"Roboto",  "Segoe UI", "Microsoft Yahei", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     }
   </style>
 <?php endif; ?>

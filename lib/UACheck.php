@@ -21,6 +21,8 @@ class UACheck {
   public static function isSafari() {
     if (strpos(self::getUserAgent(), 'Safari') && !strpos(self::getUserAgent(), 'Chrome')) {
       return true;
+    } else {
+      return false;
     }
   }
 
@@ -35,24 +37,40 @@ class UACheck {
   public static function isMacOsX() {
     if (stripos(self::getUserAgent(), 'Macintosh; Intel Mac OS X')) {
       return true;
+    } else {
+      return false;
+    }
+  }
+  
+  public static function isIOS() {
+    if (strpos(self::getUserAgent(), 'iPhone OS') && !strpos(self::getUserAgent(), 'iPad')) {
+      return true;
+    } else {
+      return false;
     }
   }
 
   public static function isWindows() {
     if (stripos(self::getUserAgent(), 'Windows NT')) {
       return true;
+    } else {
+      return false;
     }
   }
 
   public static function isMSIE() {
     if (stripos(self::getUserAgent(), 'MSIE')) {
       return true;
+    } else {
+      return false;
     }
   }
 
   public static function isEdge() {
     if (stripos(self::getUserAgent(), 'Edge')) {
       return true;
+    } else {
+      return false;
     }
   }
 }

@@ -52,8 +52,9 @@ function hasScrolled() {
 	lastScrollTop = st;
 }
 
-// Optimize comments.php
+// Optimize theme.
+
 $(document).ready(function(){
   $("#cancel-comment-reply-link").addClass("btn btn-transparent");
-  $(".comment-list:first").css("padding-left", "0")
+  $("a[href*='http://']:not([href*='"+location.hostname+"']), [href*='https://']:not([href*='"+location.hostname+"'])").addClass("external").attr("target","_blank");
 });
