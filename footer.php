@@ -21,7 +21,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
             <a href="http://www.miibeian.gov.cn" rel="nofollow" target="_blank"><?php echo $this->options->beianNumber(); ?></a>
           <?php endif; ?>
         </p>
-        <p>Theme <a style="cursor:default;">Kibou</a> made with <span class="shaky">(｡･∀･)ﾉﾞ♥</span></p>
+        <p>Theme <a href="https://www.metheno.net/" style="cursor:default;">Kibou</a> made with <span class="shaky">(｡･∀･)ﾉﾞ♥</span></p>
       </footer>
     </center>
 
