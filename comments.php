@@ -35,9 +35,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <div class="comment-content" itemprop="commentText"><?php $comments->content(); ?></div>
     <div class="comment-reply"><?php $comments->reply(); ?></div>
     <?php if ($comments->children) { ?>
-        <div class="comment-children">
-            <?php $comments->threadedComments($options); ?>
-        </div>
+      <div class="comment-children">
+        <?php $comments->threadedComments($options); ?>
+      </div>
     <?php } ?>
     </li>
   <?php } ?>

@@ -65,6 +65,12 @@ function themeConfig($form) {
     '0' => _t('关闭')),
     '0', _t('MathJax 支持'), _t('默认为关闭。<br/>单行：<code>$...$</code>；<br/>多行：<code>$$...$$</code>。'));
   $form->addInput($enableMathJax);
+  
+  $enableCopyrightProtection = new Typecho_Widget_Helper_Form_Element_Radio('enableCopyrightProtection',
+    array('1' => _t('开启'),
+    '0' => _t('关闭')),
+    '0', _t('开启版权保护'), _t('添加一个版权保护机制。'));
+  $form->addInput($enableCopyrightProtection);
 
   $dnsPrefetch = new Typecho_Widget_Helper_Form_Element_Radio('dnsPrefetch',
     array('1' => _t('开启'),

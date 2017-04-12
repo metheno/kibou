@@ -95,3 +95,21 @@
   <?php endif; ?>
   </style>
 <?php endif; ?>
+
+<?php if ($this->options->enableCopyrightProtection == 1): ?>
+  <style>
+    * {
+      -webkit-user-select: none;
+    }
+  </style>
+  <script type="text/javascript">
+    (function () {
+    var re = /x/;
+    console.log(re);
+  
+    re.toString = function () {
+      window.location.href="<?php $this->options->themeUrl('component/copyright_notice.php'); ?>";
+    };
+  })();
+  </script>
+<?php endif; ?>

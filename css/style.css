@@ -733,13 +733,25 @@ h2.blog-post-title a:hover {
   text-decoration: none;
 }
 
+.comment-by-author .comment-meta cite:after {
+  content: '博主';
+  margin-left: 9px;
+  padding: 2px 5px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 11px;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
+
 .kami-comment-form {
   position: relative;
   width: 100%;
   margin: 40px 10px 0 0;
   padding: 10px 20px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
