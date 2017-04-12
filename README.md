@@ -1,4 +1,7 @@
 # typecho-theme-kibou
+v0.2.4
+
+---
 
 A minimal Typecho theme based on Bootstrap designed for a better reading experience.
 
@@ -37,6 +40,7 @@ You can also simply join the QQ group chat at 343313447.
 - Google Analysis support
 - [NetEase Comments](https://gentie.163.com/) support
 - Plugins: style optimization
+- Copyright protection
 
 ### Coming up in future updates…
 
