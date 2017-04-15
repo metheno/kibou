@@ -102,7 +102,7 @@ If you wish to contribute to this theme, please fork this repository and send a 
 
 ## Links
 
-Demo: http://blog.metheno.net/
+Demo: http://test.metheno.net/
 
 Author: https://www.metheno.net/
 
