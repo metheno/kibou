@@ -198,7 +198,36 @@ sup {
   top: -0.5em;
 }
 
+/*table style*/
+table {
+    width: 98%;
+    max-width: 98%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+table thead, table th {
+    font-weight: bold;
+}
+
+ table th, table td {
+    padding: .375rem .8125rem;
+    border: .0625rem solid #ddd;
+}
+/*table style end*/
+
+
 /* Images */
+
+/*添加一个img-shadow类名，图片加阴影*/
+.img-shadow {
+    box-shadow: rgba(0,0,0,0.5) 0 0.625rem 1.125rem;
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0 0.625rem 1.125rem;
+    max-width: 91%;
+    margin-bottom: 3.125rem;
+    border-radius: .125rem;
+}
+
 
 img, video {
   display: block;
