@@ -10,6 +10,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
       <link rel="dns-prefetch" href="//fonts.googleapis.com">
       <link rel="dns-prefetch" href="//secure.gravatar.com">
       <link rel="dns-prefetch" href="//cdn.bootcss.com">
+      
+
       <?php if ($this->options->dnsPrefetch_Add): ?>
         <link rel="dns-prefetch" href="<?php $this->options->dnsPrefetch_Add(); ?>">
       <?php endif; ?>
@@ -90,6 +92,10 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
               $this->options->description();
           endif; ?>
         </p>
+        <!-- Add “一言” API -->
+        <script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js&charset=utf-8"></script>
+        <a id="lwlhitokoto" class="lead blog-description"><script>lwlhitokoto()</script></a>
+
       </div>
 
       <div class="blog-row">
