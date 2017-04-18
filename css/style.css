@@ -1461,3 +1461,147 @@ h2.blog-post-title a:hover {
   -webkit-animation-name: bounceOutDown;
   animation-name: bounceOutDown;
 }
+//@xcz1997
+table {
+    width: 100%;
+    max-width: 65em;
+    border: 1px solid #dedede;
+    margin: 15px auto;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+table th,
+table td {
+  height: 35px;
+  border: 1px solid #dedede;
+  padding: 0 10px;
+}
+
+table th {
+    font-weight: bold;
+    text-align: center !important;
+    background: rgba(158,188,226,0.2);
+}
+
+table tbody tr:nth-child(2n) {
+    background: rgba(158,188,226,0.12);
+}
+
+table tr:hover {
+    background: #efefef;
+}
+table th {
+    white-space: nowrap; /*表头内容强制在一行显示*/
+}
+table td:nth-child(1) {
+    white-space: nowrap;
+}
+.table-area {
+    overflow: auto;
+}
+
+table {
+  /*!
+  // IE needs inline-block to position scrolling shadows otherwise use:
+  // display: block;
+  // max-width: min-content;
+  */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+
+  overflow-x: auto;
+
+  // optional - looks better for small cell values
+  white-space: nowrap;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table,
+table--flip tbody {
+  // optional - enable iOS momentum scrolling
+  -webkit-overflow-scrolling: touch;
+
+  // scrolling shadows
+  background: radial-gradient(left, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+// change these gradients from white to your background colour if it differs
+// gradient on the first cells to hide the left shadow
+table td:first-child,
+table--flip tbody tr:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+// gradient on the last cells to hide the right shadow
+table td:last-child,
+table--flip tbody tr:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
+}
+
+table th {
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+table th,
+table td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+table--flip {
+  display: flex;
+  overflow: hidden;
+  background: none;
+}
+
+table--flip thead {
+  display: flex;
+  flex-shrink: 0;
+  min-width: min-content;
+}
+
+table--flip tbody {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+table--flip tr {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+
+table--flip td,
+table--flip th {
+  display: block;
+}
+
+table--flip td {
+  background-image: none !important;
+  // border-collapse is no longer active
+  border-left: 0;
+}
+
+// border-collapse is no longer active
+table--flip th:not(:last-child),
+table--flip td:not(:last-child) {
+  border-bottom: 0;
+}
