@@ -200,6 +200,15 @@ sup {
 
 /* Images */
 
+/*添加一个img-shadow类名，图片加阴影*/
+.img-shadow {
+    box-shadow: rgba(0,0,0,0.5) 0 0.625rem 1.125rem;
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0 0.625rem 1.125rem;
+    max-width: 91%;
+    margin-bottom: 3.125rem;
+    border-radius: .125rem;
+}
+
 img, video {
   display: block;
   margin: 20px 2px;
