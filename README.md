@@ -1,7 +1,7 @@
 # typecho-theme-kibou
 v0.2.4
 
-不再更新，请移步 [Kibou Lite](https://github.com/metheno/typecho-theme-kibou-lite/
+不再更新，请移步 [Kibou Lite](https://github.com/metheno/typecho-theme-kibou-lite/)
 
 ---
 
