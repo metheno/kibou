@@ -1,6 +1,8 @@
 # typecho-theme-kibou
 v0.2.4
 
+不再更新，请移步 [Kibou Lite](https://github.com/metheno/typecho-theme-kibou-lite/
+
 ---
 
 A minimal Typecho theme based on Bootstrap designed for a better reading experience.
