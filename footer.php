@@ -33,8 +33,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <script src="<?php $this->options->themeUrl('js/highlight.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/ASpace.js'); ?>"></script>
     <script src="<?php $this->options->themeUrl('js/loadup.js'); ?>"></script>
-    <!-- xcz1997 -->
-    <script type="text/javascript" color="80,80,80" opacity='0.7' zIndex="-2" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+    <!-- xcz1997 Background Effect -->
+    <!--<script type="text/javascript" color="80,80,80" opacity='0.7' zIndex="-2" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>-->
 
     <?php if ($this->options->analyticsGoogle): ?>
       <!-- Google Analytics -->
